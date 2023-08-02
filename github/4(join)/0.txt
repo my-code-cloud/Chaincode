@@ -1,0 +1,181 @@
+WORK=/tmp/go-build2970207752
+mkdir -p $WORK/b001/
+cd $WORK
+/my/install/dir/bin/llvm-goc -fgo-importcfg=/dev/null -c -x c - -o /dev/null || true
+mkdir -p $WORK/b001/_importcfgroot_/github.com/golang/protobuf
+ln -s /home/ming/.cache/go-build/1b/1bb6d5a5db816627e1062ba150d0d46854343438c2bc521092fd8d1c5fc57b06-d $WORK/b001/_importcfgroot_/github.com/golang/protobuf/libproto.a
+mkdir -p $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric-protos-go
+ln -s /home/ming/.cache/go-build/26/268598c1c13b32c2b089f1c03ca1c054ad72ad05f1e12aeaa5c38a9c36561949-d $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric-protos-go/libpeer.a
+mkdir -p $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric/common
+ln -s /home/ming/.cache/go-build/a6/a67882dfc9788d52fb14cbfc1c57d062bd6731e2be5539e70fd63e5aa6ae6251-d $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric/common/libchannelconfig.a
+ln -s /home/ming/.cache/go-build/47/47cc6198519851a85822fef7402e571124a8dd0d2c0658728e59f36014335cae-d $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric/common/libflogging.a
+ln -s /home/ming/.cache/go-build/b4/b430803f4d64175ad783ec97c74b5ba62c24687bec5d534847f4da74447ad1a9-d $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric/common/libledger.a
+mkdir -p $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric/core/aclmgmt
+ln -s /home/ming/.cache/go-build/77/77d50b4d01a119924fc99ad3c379cfec6795c007cb05ec9211fd72d4dd25af20-d $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric/core/aclmgmt/libresources.a
+mkdir -p $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric/core/common
+ln -s /home/ming/.cache/go-build/08/08af9f533f2726943914bfca526ae715f981b03d2d29ff5842b7c63d089ed117-d $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric/core/common/libccprovider.a
+ln -s /home/ming/.cache/go-build/1d/1d5cdb15244df1d6fa16d0b5c96e077d80abe23a99b0c7ccfff3b2de1158bb86-d $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric/core/common/libprivdata.a
+ln -s /home/ming/.cache/go-build/d1/d115ccf57af56209a4ce91a3c2f64a4fdae5a3633e8b11a45933b7e8ee8d93c1-d $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric/core/common/libsysccprovider.a
+mkdir -p $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric/core/container
+ln -s /home/ming/.cache/go-build/c6/c6c9c390b4059fa998bb08def94424d9f725e2ab5e712dcb937bc198fa16b82f-d $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric/core/container/libccintf.a
+mkdir -p $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric/core
+ln -s /home/ming/.cache/go-build/14/14208ca08ed0a2b5a6d7f202d1de0b57919a399bdd5d6cd730239241da93eb7c-d $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric/core/libledger.a
+ln -s /home/ming/.cache/go-build/69/692de7c247793f2dcadf7cdcb8835eb9e59352cf8fc22641ece28a3c19bcadfa-d $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric/core/libscc.a
+mkdir -p $WORK/b001/_importcfgroot_/github.com/pkg
+ln -s /home/ming/.cache/go-build/6b/6bd35083099c97274bc2f0e2f397f344f20d992601dc47ad9a4320ec89c1ef5f-d $WORK/b001/_importcfgroot_/github.com/pkg/liberrors.a
+/my/install/dir/bin/llvm-goc -ffile-prefix-map=a=b -c -x c - -o /dev/null || true
+cd /home/ming/go/src/chainCode/github/4
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=command-line-arguments -o $WORK/b001/_go_.o -I $WORK/b001/_importcfgroot_ ./4.go
+# command-line-arguments
+./4.go:900:40: error: expected ';' or '}' or newline
+./4.go:901:2: error: expected declaration
+./4.go:902:2: error: expected declaration
+./4.go:903:2: error: expected declaration
+./4.go:905:2: error: expected declaration
+./4.go:907:2: error: expected declaration
+./4.go:908:2: error: expected declaration
+./4.go:909:2: error: expected declaration
+./4.go:911:2: error: expected declaration
+./4.go:912:2: error: expected declaration
+./4.go:913:1: error: expected declaration
+./4.go:573:96: error: use of undefined type 'readWritePermission'
+./4.go:900:41: error: missing return at end of function
+./4.go:127:11: error: use of undefined type 'HandlerMetrics'
+./4.go:242:11: error: reference to field 'ShimRequestsReceived' in object which has no fields or methods
+./4.go:260:11: error: reference to field 'ShimRequestDuration' in object which has no fields or methods
+./4.go:261:11: error: reference to field 'ShimRequestsCompleted' in object which has no fields or methods
+./4.go:63:51: error: use of undefined type 'TransactionContext'
+./4.go:510:6: error: reference to field 'ResponseNotifier' in object which has no fields or methods
+./4.go:511:6: error: reference to field 'CloseQueryIterators' in object which has no fields or methods
+./4.go:517:34: error: reference to field 'TXSimulator' in object which has no fields or methods
+./4.go:573:96: error: use of undefined type 'readWritePermission'
+./4.go:554:18: error: reference to field 'read' in object which has no fields or methods
+./4.go:566:18: error: reference to field 'write' in object which has no fields or methods
+./4.go:63:51: error: use of undefined type 'TransactionContext'
+./4.go:575:30: error: reference to field 'CollectionACLCache' in object which has no fields or methods
+./4.go:580:24: error: reference to field 'ChannelID' in object which has no fields or methods
+./4.go:585:33: error: reference to field 'CollectionStore' in object which has no fields or methods
+./4.go:585:91: error: reference to field 'SignedProp' in object which has no fields or methods
+./4.go:585:113: error: reference to field 'TXSimulator' in object which has no fields or methods
+./4.go:589:39: error: reference to undefined name 'read'
+./4.go:589:52: error: reference to undefined name 'write'
+./4.go:590:11: error: reference to field 'CollectionACLCache' in object which has no fields or methods
+./4.go:63:51: error: use of undefined type 'TransactionContext'
+./4.go:604:26: error: reference to field 'NamespaceID' in object which has no fields or methods
+./4.go:606:141: error: reference to field 'ChannelID' in object which has no fields or methods
+./4.go:609:15: error: reference to field 'IsInitTransaction' in object which has no fields or methods
+./4.go:615:23: error: reference to field 'TXSimulator' in object which has no fields or methods
+./4.go:617:23: error: reference to field 'TXSimulator' in object which has no fields or methods
+./4.go:63:51: error: use of undefined type 'TransactionContext'
+./4.go:638:26: error: reference to field 'NamespaceID' in object which has no fields or methods
+./4.go:640:153: error: reference to field 'ChannelID' in object which has no fields or methods
+./4.go:641:14: error: reference to field 'IsInitTransaction' in object which has no fields or methods
+./4.go:644:22: error: reference to field 'TXSimulator' in object which has no fields or methods
+./4.go:63:51: error: use of undefined type 'TransactionContext'
+./4.go:668:26: error: reference to field 'NamespaceID' in object which has no fields or methods
+./4.go:670:158: error: reference to field 'ChannelID' in object which has no fields or methods
+./4.go:674:15: error: reference to field 'IsInitTransaction' in object which has no fields or methods
+./4.go:680:28: error: reference to field 'TXSimulator' in object which has no fields or methods
+./4.go:682:28: error: reference to field 'TXSimulator' in object which has no fields or methods
+./4.go:63:51: error: use of undefined type 'TransactionContext'
+./4.go:723:26: error: reference to field 'NamespaceID' in object which has no fields or methods
+./4.go:726:15: error: reference to field 'IsInitTransaction' in object which has no fields or methods
+./4.go:732:29: error: reference to field 'TXSimulator' in object which has no fields or methods
+./4.go:748:29: error: reference to field 'TXSimulator' in object which has no fields or methods
+./4.go:751:29: error: reference to field 'TXSimulator' in object which has no fields or methods
+./4.go:756:11: error: reference to field 'InitializeQueryContext' in object which has no fields or methods
+./4.go:760:12: error: reference to field 'CleanupQueryContext' in object which has no fields or methods
+./4.go:766:12: error: reference to field 'CleanupQueryContext' in object which has no fields or methods
+./4.go:63:51: error: use of undefined type 'TransactionContext'
+./4.go:782:24: error: reference to field 'GetQueryIterator' in object which has no fields or methods
+./4.go:791:12: error: reference to field 'CleanupQueryContext' in object which has no fields or methods
+./4.go:797:12: error: reference to field 'CleanupQueryContext' in object which has no fields or methods
+./4.go:63:51: error: use of undefined type 'TransactionContext'
+./4.go:812:19: error: reference to field 'GetQueryIterator' in object which has no fields or methods
+./4.go:814:12: error: reference to field 'CleanupQueryContext' in object which has no fields or methods
+./4.go:63:51: error: use of undefined type 'TransactionContext'
+./4.go:855:26: error: reference to field 'NamespaceID' in object which has no fields or methods
+./4.go:858:15: error: reference to field 'IsInitTransaction' in object which has no fields or methods
+./4.go:864:31: error: reference to field 'TXSimulator' in object which has no fields or methods
+./4.go:871:31: error: reference to field 'TXSimulator' in object which has no fields or methods
+./4.go:875:31: error: reference to field 'TXSimulator' in object which has no fields or methods
+./4.go:881:11: error: reference to field 'InitializeQueryContext' in object which has no fields or methods
+./4.go:885:12: error: reference to field 'CleanupQueryContext' in object which has no fields or methods
+./4.go:891:12: error: reference to field 'CleanupQueryContext' in object which has no fields or methods
+./4.go:900:12: error: reference to undefined name 'shim'
+./4.go:63:51: error: use of undefined type 'TransactionContext'
+./4.go:917:14: error: reference to field 'HistoryQueryExecutor' in object which has no fields or methods
+./4.go:921:26: error: reference to field 'NamespaceID' in object which has no fields or methods
+./4.go:929:31: error: reference to field 'HistoryQueryExecutor' in object which has no fields or methods
+./4.go:936:11: error: reference to field 'InitializeQueryContext' in object which has no fields or methods
+./4.go:939:12: error: reference to field 'CleanupQueryContext' in object which has no fields or methods
+./4.go:945:12: error: reference to field 'CleanupQueryContext' in object which has no fields or methods
+./4.go:63:51: error: use of undefined type 'TransactionContext'
+./4.go:1050:26: error: reference to field 'NamespaceID' in object which has no fields or methods
+./4.go:1053:15: error: reference to field 'IsInitTransaction' in object which has no fields or methods
+./4.go:1059:18: error: reference to field 'TXSimulator' in object which has no fields or methods
+./4.go:1061:18: error: reference to field 'TXSimulator' in object which has no fields or methods
+./4.go:63:51: error: use of undefined type 'TransactionContext'
+./4.go:1085:26: error: reference to field 'NamespaceID' in object which has no fields or methods
+./4.go:1088:15: error: reference to field 'IsInitTransaction' in object which has no fields or methods
+./4.go:1094:18: error: reference to field 'TXSimulator' in object which has no fields or methods
+./4.go:1096:18: error: reference to field 'TXSimulator' in object which has no fields or methods
+./4.go:63:51: error: use of undefined type 'TransactionContext'
+./4.go:1112:26: error: reference to field 'NamespaceID' in object which has no fields or methods
+./4.go:1115:15: error: reference to field 'IsInitTransaction' in object which has no fields or methods
+./4.go:1121:18: error: reference to field 'TXSimulator' in object which has no fields or methods
+./4.go:1123:18: error: reference to field 'TXSimulator' in object which has no fields or methods
+./4.go:63:51: error: use of undefined type 'TransactionContext'
+./4.go:1150:39: error: reference to field 'ChannelID' in object which has no fields or methods
+./4.go:1154:28: error: reference to field 'SignedProp' in object which has no fields or methods
+./4.go:1154:50: error: reference to field 'Proposal' in object which has no fields or methods
+./4.go:1161:13: error: reference to field 'SignedProp' in object which has no fields or methods
+./4.go:1172:34: error: reference to field 'SignedProp' in object which has no fields or methods
+./4.go:1173:34: error: reference to field 'Proposal' in object which has no fields or methods
+./4.go:1174:34: error: reference to field 'TXSimulator' in object which has no fields or methods
+./4.go:1175:34: error: reference to field 'HistoryQueryExecutor' in object which has no fields or methods
+./4.go:1178:42: error: reference to field 'ChannelID' in object which has no fields or methods
+./4.go:63:51: error: use of undefined type 'TransactionContext'
+./4.go:1237:23: error: reference to field 'ResponseNotifier' in object which has no fields or methods
+./4.go:1242:12: error: reference to field 'ExecuteTimeouts' in object which has no fields or methods
+./4.go:63:51: error: use of undefined type 'TransactionContext'
+./4.go:63:51: error: use of undefined type 'TransactionContext'
+./4.go:63:51: error: use of undefined type 'TransactionContext'
+./4.go:63:51: error: use of undefined type 'TransactionContext'
+./4.go:63:51: error: use of undefined type 'TransactionContext'
+./4.go:63:51: error: use of undefined type 'TransactionContext'
+./4.go:63:51: error: use of undefined type 'TransactionContext'
+./4.go:63:51: error: use of undefined type 'TransactionContext'
+./4.go:63:51: error: use of undefined type 'TransactionContext'
+./4.go:1237:23: error: expected channel
+ #0 0x000055b99dc07e04 PrintStackTraceSignalHandler(void*) (/my/install/dir/bin/llvm-goc+0x2352e04)
+ #1 0x000055b99dc05a7e SignalHandler(int) (/my/install/dir/bin/llvm-goc+0x2350a7e)
+ #2 0x00007fba2c5da420 __restore_rt (/lib/x86_64-linux-gnu/libpthread.so.0+0x14420)
+ #3 0x000055b99da6fa88 llvm::PointerType::get(llvm::Type*, unsigned int) (.localalias) (/my/install/dir/bin/llvm-goc+0x21baa88)
+ #4 0x000055b99c0e3ea3 Llvm_backend::makeFieldGEP(unsigned int, llvm::Value*) (.localalias) (/my/install/dir/bin/llvm-goc+0x82eea3)
+ #5 0x000055b99c0e4358 Llvm_backend::materializeStructField(Bexpression*) (.localalias) (/my/install/dir/bin/llvm-goc+0x82f358)
+ #6 0x000055b99c0e82ae Llvm_backend::materialize(Bexpression*, Varexpr_context) (.localalias) (/my/install/dir/bin/llvm-goc+0x8332ae)
+ #7 0x000055b99c0554c8 Llvm_backend::assignment_statement(Bfunction*, Bexpression*, Bexpression*, Location) (.localalias) (/my/install/dir/bin/llvm-goc+0x7a04c8)
+ #8 0x000055b99c088ca5 Heap_expression::do_get_backend(Translate_context*) (.localalias) (/my/install/dir/bin/llvm-goc+0x7d3ca5)
+ #9 0x000055b99c084164 Interface_value_expression::do_get_backend(Translate_context*) (.localalias) (/my/install/dir/bin/llvm-goc+0x7cf164)
+#10 0x000055b99c0a5146 Type_conversion_expression::do_get_backend(Translate_context*) (.localalias) (/my/install/dir/bin/llvm-goc+0x7f0146)
+#11 0x000055b99c0b14eb Array_construction_expression::get_constructor(Translate_context*, Btype*) (.localalias) (/my/install/dir/bin/llvm-goc+0x7fc4eb)
+#12 0x000055b99c0889a4 Heap_expression::do_get_backend(Translate_context*) (.localalias) (/my/install/dir/bin/llvm-goc+0x7d39a4)
+#13 0x000055b99c087a10 Unsafe_type_conversion_expression::do_get_backend(Translate_context*) (.localalias) (/my/install/dir/bin/llvm-goc+0x7d2a10)
+#14 0x000055b99c0849a9 Slice_value_expression::do_get_backend(Translate_context*) (.localalias) (/my/install/dir/bin/llvm-goc+0x7cf9a9)
+#15 0x000055b99c0b607c Call_expression::do_get_backend(Translate_context*) (.localalias) (/my/install/dir/bin/llvm-goc+0x80107c)
+#16 0x000055b99bfecfc0 Expression_statement::do_get_backend(Translate_context*) (.localalias) (/my/install/dir/bin/llvm-goc+0x737fc0)
+#17 0x000055b99bfa5bbb Block::get_backend(Translate_context*) (.localalias) (/my/install/dir/bin/llvm-goc+0x6f0bbb)
+#18 0x000055b99bfa6948 Function::build(Gogo*, Named_object*) (.localalias) (/my/install/dir/bin/llvm-goc+0x6f1948)
+#19 0x000055b99bfa7e79 Named_object::get_backend(Gogo*, std::vector<Bexpression*, std::allocator<Bexpression*> >&, std::vector<Btype*, std::allocator<Btype*> >&, std::vector<Bfunction*, std::allocator<Bfunction*> >&) (.localalias) (/my/install/dir/bin/llvm-goc+0x6f2e79)
+#20 0x000055b99bfb40ba Gogo::write_globals() (/my/install/dir/bin/llvm-goc+0x6ff0ba)
+#21 0x000055b99bf72763 gollvm::driver::CompileGoImpl::invokeFrontEnd() (.localalias) (/my/install/dir/bin/llvm-goc+0x6bd763)
+#22 0x000055b99bf7a088 gollvm::driver::CompileGo::performAction(gollvm::driver::Compilation&, gollvm::driver::Action const&, llvm::SmallVector<gollvm::driver::Artifact*, 3u> const&, gollvm::driver::Artifact const&) (.localalias) (/my/install/dir/bin/llvm-goc+0x6c5088)
+#23 0x000055b99bf6bd64 gollvm::driver::Driver::processAction(gollvm::driver::Action*, gollvm::driver::Compilation&, bool) (.localalias) (/my/install/dir/bin/llvm-goc+0x6b6d64)
+#24 0x000055b99bf6bf64 gollvm::driver::Driver::processActions(gollvm::driver::Compilation&) (/my/install/dir/bin/llvm-goc+0x6b6f64)
+#25 0x000055b99be9c8cc main (/my/install/dir/bin/llvm-goc+0x5e78cc)
+#26 0x00007fba2c058083 __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x24083)
+#27 0x000055b99bf629ae _start (/my/install/dir/bin/llvm-goc+0x6ad9ae)
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace.
+Stack dump:
+0.	Program arguments: /my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=/tmp/go-build2970207752=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=command-line-arguments -o $WORK/b001/_go_.o -I $WORK/b001/_importcfgroot_ ./4.go

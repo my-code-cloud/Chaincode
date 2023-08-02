@@ -1,0 +1,114 @@
+WORK=/tmp/go-build741828982
+mkdir -p $WORK/b196/
+cd $WORK
+/my/install/dir/bin/llvm-goc -fgo-importcfg=/dev/null -c -x c - -o /dev/null || true
+/my/install/dir/bin/llvm-goc -ffile-prefix-map=a=b -c -x c - -o /dev/null || true
+cd /home/ming/go/pkg/mod/golang.org/x/crypto@v0.0.0-20210421170649-83a5a9bb288b/sha3
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=golang.org/x/crypto/sha3 -o $WORK/b196/_go_.o -I $WORK/b196/_importcfgroot_ ./doc.go ./hashes.go ./hashes_generic.go ./keccakf.go ./register.go ./sha3.go ./shake.go ./shake_generic.go ./xor_generic.go ./xor_unaligned.go
+mkdir -p $WORK/b193/
+mkdir -p $WORK/b193/_importcfgroot_/go.uber.org
+ln -s /home/ming/.cache/go-build/ca/ca964adfc4c4080ae652861e5071d5dbde07ca3b994fb3a4349889eae7c84128-d $WORK/b193/_importcfgroot_/go.uber.org/libatomic.a
+ln -s /home/ming/.cache/go-build/ca/ca474725023fa96845f4cad5d7ec8cdd3422b6e56916c4627efcfca92fdb4878-d $WORK/b193/_importcfgroot_/go.uber.org/libmultierr.a
+mkdir -p $WORK/b193/_importcfgroot_/go.uber.org/zap
+ln -s /home/ming/.cache/go-build/f6/f6986adf175b2d0f86a9a0ab69b0f66334e6c3dd624dff44af73812fd4253e9b-d $WORK/b193/_importcfgroot_/go.uber.org/zap/libbuffer.a
+ln -s /home/ming/.cache/go-build/0e/0e737e0f2b57e7d449079d6ca0914eca5a0e392b7ca8f60ae1d2f485910f8769-d $WORK/b193/_importcfgroot_/go.uber.org/zap/libinternal.a
+mkdir -p $WORK/b193/_importcfgroot_/go.uber.org/zap/internal
+ln -s /home/ming/.cache/go-build/f6/f62087629fff8522072372b85ab859e39a774f61d265173ed5c826b0f46638e9-d $WORK/b193/_importcfgroot_/go.uber.org/zap/internal/libbufferpool.a
+ln -s /home/ming/.cache/go-build/d7/d753cafd99dc6e01e9755c8b670c2ffa55a80e2b01c4d2e000f07d7d0a721a5f-d $WORK/b193/_importcfgroot_/go.uber.org/zap/libzapcore.a
+cd /home/ming/go/pkg/mod/go.uber.org/zap@v1.23.0
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=go.uber.org/zap -o $WORK/b193/_go_.o -I $WORK/b193/_importcfgroot_ ./array.go ./array_go118.go ./config.go ./doc.go ./encoder.go ./error.go ./field.go ./flag.go ./global.go ./http_handler.go ./level.go ./logger.go ./options.go ./sink.go ./stacktrace.go ./sugar.go ./time.go ./writer.go
+mkdir -p $WORK/b002/
+mkdir -p $WORK/b002/_importcfgroot_/github.com/hyperledger/fabric-protos-go
+ln -s /home/ming/.cache/go-build/09/09e65326ba1ecb9ca28ca59a1860f18b181f0c4e38e6d716754a6c5e455848c7-d $WORK/b002/_importcfgroot_/github.com/hyperledger/fabric-protos-go/libpeer.a
+cd /home/ming/go/pkg/mod/github.com/goledgerdev/cc-tools@v0.7.5/errors
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=github.com/goledgerdev/cc-tools/errors -o $WORK/b002/_go_.o -I $WORK/b002/_importcfgroot_ ./errors.go
+mkdir -p $WORK/b155/
+mkdir -p $WORK/b155/_importcfgroot_/github.com/golang/protobuf
+ln -s /home/ming/.cache/go-build/1b/1bb6d5a5db816627e1062ba150d0d46854343438c2bc521092fd8d1c5fc57b06-d $WORK/b155/_importcfgroot_/github.com/golang/protobuf/libproto.a
+ln -s /home/ming/.cache/go-build/70/70605a38307c0029b5659f01320d5f8578beb84cfd2e25156a1489e8bb2a2fd2-d $WORK/b155/_importcfgroot_/github.com/golang/protobuf/libptypes.a
+mkdir -p $WORK/b155/_importcfgroot_/github.com/golang/protobuf/ptypes
+ln -s /home/ming/.cache/go-build/8c/8c98af229b3af1fa22159b956519e50a85bc3c80caed0a4b2eee3b3074497693-d $WORK/b155/_importcfgroot_/github.com/golang/protobuf/ptypes/libtimestamp.a
+mkdir -p $WORK/b155/_importcfgroot_/github.com/hyperledger/fabric-chaincode-go
+ln -s /home/ming/.cache/go-build/78/78e4c47b769d07c859c68a764af671885ee729e23c851fc0c55a5443b842b287-d $WORK/b155/_importcfgroot_/github.com/hyperledger/fabric-chaincode-go/libshim.a
+mkdir -p $WORK/b155/_importcfgroot_/github.com/hyperledger/fabric-protos-go/ledger
+ln -s /home/ming/.cache/go-build/71/71d889bf731394cedc7d5d5fcc8719f4d5ce7b05f99da4a6e641a847c7a50ab6-d $WORK/b155/_importcfgroot_/github.com/hyperledger/fabric-protos-go/ledger/libqueryresult.a
+mkdir -p $WORK/b155/_importcfgroot_/github.com/hyperledger/fabric-protos-go
+ln -s /home/ming/.cache/go-build/09/09e65326ba1ecb9ca28ca59a1860f18b181f0c4e38e6d716754a6c5e455848c7-d $WORK/b155/_importcfgroot_/github.com/hyperledger/fabric-protos-go/libpeer.a
+cd /home/ming/go/pkg/mod/github.com/goledgerdev/cc-tools@v0.7.5/mock
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=github.com/goledgerdev/cc-tools/mock -o $WORK/b155/_go_.o -I $WORK/b155/_importcfgroot_ ./mockstub.go
+# github.com/goledgerdev/cc-tools/mock
+../../../../pkg/mod/github.com/goledgerdev/cc-tools@v0.7.5/mock/mockstub.go:145:22: error: argument 1 has incompatible type (missing method 'PurgePrivateData')
+../../../../pkg/mod/github.com/goledgerdev/cc-tools@v0.7.5/mock/mockstub.go:154:24: error: argument 1 has incompatible type (missing method 'PurgePrivateData')
+../../../../pkg/mod/github.com/goledgerdev/cc-tools@v0.7.5/mock/mockstub.go:169:24: error: argument 1 has incompatible type (missing method 'PurgePrivateData')
+echo '	.section .go.buildid,"e"' >> $WORK/b002/_buildid.s
+echo '	.byte 0x43,0x41,0x41,0x50,0x2d,0x47,0x33,0x69' >> $WORK/b002/_buildid.s
+echo '	.byte 0x30,0x43,0x78,0x4d,0x66,0x53,0x6f,0x68' >> $WORK/b002/_buildid.s
+echo '	.byte 0x6c,0x5f,0x77,0x73,0x2f,0x43,0x41,0x41' >> $WORK/b002/_buildid.s
+echo '	.byte 0x50,0x2d,0x47,0x33,0x69,0x30,0x43,0x78' >> $WORK/b002/_buildid.s
+echo '	.byte 0x4d,0x66,0x53,0x6f,0x68,0x6c,0x5f,0x77' >> $WORK/b002/_buildid.s
+echo '	.byte 0x73' >> $WORK/b002/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b002/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b002/_buildid.s
+echo '' >> $WORK/b002/_buildid.s
+cd /home/ming/go/pkg/mod/github.com/goledgerdev/cc-tools@v0.7.5/errors
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b002/ -c -o $WORK/b002/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=github_0com_1goledgerdev_1cc_x2dtools_1errors -m64 $WORK/b002/_buildid.s
+ar rcD $WORK/b002/_pkg_.a $WORK/b002/_go_.o $WORK/b002/_buildid.o
+/my/install/dir/tools/buildid -w $WORK/b002/_pkg_.a # internal
+cp $WORK/b002/_pkg_.a /home/ming/.cache/go-build/d0/d0da2e5a29d1254c35ab5a740fb744cf0fe5213b9ea2c005d8bd425a682afdaf-d # internal
+# go.uber.org/zap
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:64:13: error: expected '('
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:64:16: error: expected ']'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:64:16: error: expected ';' or newline after top level declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:66:1: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:68:16: error: expected ']'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:70:17: error: expected ')'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:70:17: error: expected function name
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:70:17: error: expected ';' or newline after top level declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:72:34: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:74:3: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:75:2: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:76:2: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:77:1: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:81:27: error: expected ']'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:83:2: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:84:1: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:108:18: error: expected '('
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:108:21: error: expected ']'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:108:21: error: expected ';' or newline after top level declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:110:1: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:112:21: error: expected ']'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:114:22: error: expected ')'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:114:22: error: expected function name
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:114:22: error: expected ';' or newline after top level declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:123:3: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:123:34: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:125:3: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:126:2: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:127:2: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:128:1: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:145:15: error: expected '('
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:145:18: error: expected ']'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:145:18: error: expected ';' or newline after top level declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:147:1: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:149:18: error: expected ']'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:151:19: error: expected ')'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:151:19: error: expected function name
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:151:19: error: expected ';' or newline after top level declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:154:2: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:155:2: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:156:1: error: expected declaration
+echo '	.section .go.buildid,"e"' >> $WORK/b196/_buildid.s
+echo '	.byte 0x6a,0x72,0x33,0x50,0x2d,0x4c,0x67,0x35' >> $WORK/b196/_buildid.s
+echo '	.byte 0x64,0x37,0x57,0x6b,0x51,0x6f,0x58,0x77' >> $WORK/b196/_buildid.s
+echo '	.byte 0x42,0x2d,0x67,0x34,0x2f,0x6a,0x72,0x33' >> $WORK/b196/_buildid.s
+echo '	.byte 0x50,0x2d,0x4c,0x67,0x35,0x64,0x37,0x57' >> $WORK/b196/_buildid.s
+echo '	.byte 0x6b,0x51,0x6f,0x58,0x77,0x42,0x2d,0x67' >> $WORK/b196/_buildid.s
+echo '	.byte 0x34' >> $WORK/b196/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b196/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b196/_buildid.s
+echo '' >> $WORK/b196/_buildid.s
+cd /home/ming/go/pkg/mod/golang.org/x/crypto@v0.0.0-20210421170649-83a5a9bb288b/sha3
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b196/ -c -o $WORK/b196/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=golang_0org_1x_1crypto_1sha3 -m64 $WORK/b196/_buildid.s
+ar rcD $WORK/b196/_pkg_.a $WORK/b196/_go_.o $WORK/b196/_buildid.o
+/my/install/dir/tools/buildid -w $WORK/b196/_pkg_.a # internal
+cp $WORK/b196/_pkg_.a /home/ming/.cache/go-build/26/264b4dec3e0ea540ed0514581d1d8bd56119748af5ede2987f29d3e9a4f362e4-d # internal

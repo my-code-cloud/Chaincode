@@ -1,0 +1,27 @@
+WORK=/tmp/go-build802980187
+mkdir -p $WORK/b001/
+cd $WORK
+/my/install/dir/bin/llvm-goc -fgo-importcfg=/dev/null -c -x c - -o /dev/null || true
+mkdir -p $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric-chaincode-go/pkg
+ln -s /home/ming/.cache/go-build/6f/6f875a06430e419a31221a110c47eb12653fc65d126b925ae40247b5661316ca-d $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric-chaincode-go/pkg/libstatebased.a
+mkdir -p $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric-chaincode-go
+ln -s /home/ming/.cache/go-build/78/78e4c47b769d07c859c68a764af671885ee729e23c851fc0c55a5443b842b287-d $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric-chaincode-go/libshim.a
+mkdir -p $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric-protos-go
+ln -s /home/ming/.cache/go-build/09/09e65326ba1ecb9ca28ca59a1860f18b181f0c4e38e6d716754a6c5e455848c7-d $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric-protos-go/libpeer.a
+/my/install/dir/bin/llvm-goc -ffile-prefix-map=a=b -c -x c - -o /dev/null || true
+cd /home/ming/go/src/chaincode_repo/github/53
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=command-line-arguments -o $WORK/b001/_go_.o -I $WORK/b001/_importcfgroot_ ./53.go
+echo '	.section .go.buildid,"e"' >> $WORK/b001/_buildid.s
+echo '	.byte 0x78,0x59,0x56,0x61,0x73,0x78,0x65,0x73' >> $WORK/b001/_buildid.s
+echo '	.byte 0x6f,0x72,0x75,0x42,0x36,0x49,0x66,0x77' >> $WORK/b001/_buildid.s
+echo '	.byte 0x4e,0x61,0x4c,0x70,0x2f,0x78,0x59,0x56' >> $WORK/b001/_buildid.s
+echo '	.byte 0x61,0x73,0x78,0x65,0x73,0x6f,0x72,0x75' >> $WORK/b001/_buildid.s
+echo '	.byte 0x42,0x36,0x49,0x66,0x77,0x4e,0x61,0x4c' >> $WORK/b001/_buildid.s
+echo '	.byte 0x70' >> $WORK/b001/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b001/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b001/_buildid.s
+echo '' >> $WORK/b001/_buildid.s
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b001/ -c -o $WORK/b001/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=command_x2dline_x2darguments -m64 $WORK/b001/_buildid.s
+ar rcD $WORK/b001/_pkg_.a $WORK/b001/_go_.o $WORK/b001/_buildid.o
+/my/install/dir/tools/buildid -w $WORK/b001/_pkg_.a # internal
+cp $WORK/b001/_pkg_.a /home/ming/.cache/go-build/39/392697afdd9120cdf0de3b82334ebcf79e4b6a3e11fc760ba4e0a6399e97e789-d # internal

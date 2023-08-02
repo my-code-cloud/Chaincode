@@ -1,0 +1,194 @@
+WORK=/tmp/go-build2329721465
+mkdir -p $WORK/b072/
+cd $WORK
+/my/install/dir/bin/llvm-goc -fgo-importcfg=/dev/null -c -x c - -o /dev/null || true
+mkdir -p $WORK/b072/_importcfgroot_/github.com/golang/protobuf
+mkdir -p $WORK/b071/
+ln -s /home/ming/.cache/go-build/1b/1bb6d5a5db816627e1062ba150d0d46854343438c2bc521092fd8d1c5fc57b06-d $WORK/b072/_importcfgroot_/github.com/golang/protobuf/libproto.a
+/my/install/dir/bin/llvm-goc -ffile-prefix-map=a=b -c -x c - -o /dev/null || true
+cd /home/ming/go/pkg/mod/github.com/hyperledger/fabric-protos-go@v0.0.0-20220827195505-ce4c067a561d/ledger/rwset
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=github.com/hyperledger/fabric-protos-go/ledger/rwset -o $WORK/b072/_go_.o -I $WORK/b072/_importcfgroot_ ./rwset.pb.go
+mkdir -p $WORK/b158/
+mkdir -p $WORK/b071/_importcfgroot_/github.com/golang/protobuf
+mkdir -p $WORK/b158/_importcfgroot_/github.com/golang/protobuf
+ln -s /home/ming/.cache/go-build/1b/1bb6d5a5db816627e1062ba150d0d46854343438c2bc521092fd8d1c5fc57b06-d $WORK/b071/_importcfgroot_/github.com/golang/protobuf/libproto.a
+ln -s /home/ming/.cache/go-build/1b/1bb6d5a5db816627e1062ba150d0d46854343438c2bc521092fd8d1c5fc57b06-d $WORK/b158/_importcfgroot_/github.com/golang/protobuf/libproto.a
+mkdir -p $WORK/b158/_importcfgroot_/github.com/golang/protobuf/ptypes
+ln -s /home/ming/.cache/go-build/8c/8c98af229b3af1fa22159b956519e50a85bc3c80caed0a4b2eee3b3074497693-d $WORK/b158/_importcfgroot_/github.com/golang/protobuf/ptypes/libtimestamp.a
+cd /home/ming/go/pkg/mod/github.com/hyperledger/fabric-protos-go@v0.0.0-20220827195505-ce4c067a561d/msp
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=github.com/hyperledger/fabric-protos-go/msp -o $WORK/b071/_go_.o -I $WORK/b071/_importcfgroot_ ./identities.pb.go ./msp_config.pb.go ./msp_principal.pb.go
+cd /home/ming/go/pkg/mod/github.com/hyperledger/fabric-protos-go@v0.0.0-20220827195505-ce4c067a561d/ledger/queryresult
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=github.com/hyperledger/fabric-protos-go/ledger/queryresult -o $WORK/b158/_go_.o -I $WORK/b158/_importcfgroot_ ./kv_query_result.pb.go
+echo '	.section .go.buildid,"e"' >> $WORK/b158/_buildid.s
+echo '	.byte 0x2d,0x7a,0x78,0x66,0x61,0x54,0x4a,0x4c' >> $WORK/b158/_buildid.s
+echo '	.byte 0x45,0x4c,0x4a,0x65,0x33,0x73,0x69,0x30' >> $WORK/b158/_buildid.s
+echo '	.byte 0x79,0x4b,0x39,0x64,0x2f,0x2d,0x7a,0x78' >> $WORK/b158/_buildid.s
+echo '	.byte 0x66,0x61,0x54,0x4a,0x4c,0x45,0x4c,0x4a' >> $WORK/b158/_buildid.s
+echo '	.byte 0x65,0x33,0x73,0x69,0x30,0x79,0x4b,0x39' >> $WORK/b158/_buildid.s
+echo '	.byte 0x64' >> $WORK/b158/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b158/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b158/_buildid.s
+echo '' >> $WORK/b158/_buildid.s
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b158/ -c -o $WORK/b158/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=github_0com_1hyperledger_1fabric_x2dprotos_x2dgo_1ledger_1queryresult -m64 $WORK/b158/_buildid.s
+ar rcD $WORK/b158/_pkg_.a $WORK/b158/_go_.o $WORK/b158/_buildid.o
+/my/install/dir/tools/buildid -w $WORK/b158/_pkg_.a # internal
+cp $WORK/b158/_pkg_.a /home/ming/.cache/go-build/71/71d889bf731394cedc7d5d5fcc8719f4d5ce7b05f99da4a6e641a847c7a50ab6-d # internal
+echo '	.section .go.buildid,"e"' >> $WORK/b072/_buildid.s
+echo '	.byte 0x73,0x61,0x47,0x38,0x37,0x75,0x2d,0x4c' >> $WORK/b072/_buildid.s
+echo '	.byte 0x6e,0x56,0x78,0x63,0x44,0x43,0x75,0x49' >> $WORK/b072/_buildid.s
+echo '	.byte 0x46,0x67,0x34,0x70,0x2f,0x73,0x61,0x47' >> $WORK/b072/_buildid.s
+echo '	.byte 0x38,0x37,0x75,0x2d,0x4c,0x6e,0x56,0x78' >> $WORK/b072/_buildid.s
+echo '	.byte 0x63,0x44,0x43,0x75,0x49,0x46,0x67,0x34' >> $WORK/b072/_buildid.s
+echo '	.byte 0x70' >> $WORK/b072/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b072/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b072/_buildid.s
+echo '' >> $WORK/b072/_buildid.s
+cd /home/ming/go/pkg/mod/github.com/hyperledger/fabric-protos-go@v0.0.0-20220827195505-ce4c067a561d/ledger/rwset
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b072/ -c -o $WORK/b072/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=github_0com_1hyperledger_1fabric_x2dprotos_x2dgo_1ledger_1rwset -m64 $WORK/b072/_buildid.s
+ar rcD $WORK/b072/_pkg_.a $WORK/b072/_go_.o $WORK/b072/_buildid.o
+/my/install/dir/tools/buildid -w $WORK/b072/_pkg_.a # internal
+cp $WORK/b072/_pkg_.a /home/ming/.cache/go-build/af/afb051b9656ba5b0c26c31240a64d8ea19cd693b50883aa7e519df48d87ddedc-d # internal
+echo '	.section .go.buildid,"e"' >> $WORK/b071/_buildid.s
+echo '	.byte 0x74,0x2d,0x63,0x50,0x74,0x6f,0x6c,0x4a' >> $WORK/b071/_buildid.s
+echo '	.byte 0x56,0x5a,0x6b,0x6d,0x68,0x78,0x52,0x4e' >> $WORK/b071/_buildid.s
+echo '	.byte 0x48,0x2d,0x43,0x36,0x2f,0x74,0x2d,0x63' >> $WORK/b071/_buildid.s
+echo '	.byte 0x50,0x74,0x6f,0x6c,0x4a,0x56,0x5a,0x6b' >> $WORK/b071/_buildid.s
+echo '	.byte 0x6d,0x68,0x78,0x52,0x4e,0x48,0x2d,0x43' >> $WORK/b071/_buildid.s
+echo '	.byte 0x36' >> $WORK/b071/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b071/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b071/_buildid.s
+echo '' >> $WORK/b071/_buildid.s
+cd /home/ming/go/pkg/mod/github.com/hyperledger/fabric-protos-go@v0.0.0-20220827195505-ce4c067a561d/msp
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b071/ -c -o $WORK/b071/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=github_0com_1hyperledger_1fabric_x2dprotos_x2dgo_1msp -m64 $WORK/b071/_buildid.s
+ar rcD $WORK/b071/_pkg_.a $WORK/b071/_go_.o $WORK/b071/_buildid.o
+/my/install/dir/tools/buildid -w $WORK/b071/_pkg_.a # internal
+cp $WORK/b071/_pkg_.a /home/ming/.cache/go-build/7d/7da876e4edd4c65ac4f8c8eb46f0db877ca71fd53706fbd09b70a013c28e14b4-d # internal
+mkdir -p $WORK/b070/
+mkdir -p $WORK/b070/_importcfgroot_/github.com/golang/protobuf
+ln -s /home/ming/.cache/go-build/1b/1bb6d5a5db816627e1062ba150d0d46854343438c2bc521092fd8d1c5fc57b06-d $WORK/b070/_importcfgroot_/github.com/golang/protobuf/libproto.a
+mkdir -p $WORK/b070/_importcfgroot_/github.com/golang/protobuf/ptypes
+ln -s /home/ming/.cache/go-build/8c/8c98af229b3af1fa22159b956519e50a85bc3c80caed0a4b2eee3b3074497693-d $WORK/b070/_importcfgroot_/github.com/golang/protobuf/ptypes/libtimestamp.a
+mkdir -p $WORK/b070/_importcfgroot_/github.com/hyperledger/fabric-protos-go
+ln -s $WORK/b071/_pkg_.a $WORK/b070/_importcfgroot_/github.com/hyperledger/fabric-protos-go/libmsp.a
+cd /home/ming/go/pkg/mod/github.com/hyperledger/fabric-protos-go@v0.0.0-20220827195505-ce4c067a561d/common
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=github.com/hyperledger/fabric-protos-go/common -o $WORK/b070/_go_.o -I $WORK/b070/_importcfgroot_ ./collection.pb.go ./common.pb.go ./configtx.pb.go ./configuration.pb.go ./ledger.pb.go ./policies.pb.go
+echo '	.section .go.buildid,"e"' >> $WORK/b070/_buildid.s
+echo '	.byte 0x65,0x44,0x63,0x56,0x74,0x41,0x4c,0x4a' >> $WORK/b070/_buildid.s
+echo '	.byte 0x4e,0x39,0x39,0x75,0x66,0x6f,0x59,0x2d' >> $WORK/b070/_buildid.s
+echo '	.byte 0x46,0x48,0x47,0x39,0x2f,0x65,0x44,0x63' >> $WORK/b070/_buildid.s
+echo '	.byte 0x56,0x74,0x41,0x4c,0x4a,0x4e,0x39,0x39' >> $WORK/b070/_buildid.s
+echo '	.byte 0x75,0x66,0x6f,0x59,0x2d,0x46,0x48,0x47' >> $WORK/b070/_buildid.s
+echo '	.byte 0x39' >> $WORK/b070/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b070/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b070/_buildid.s
+echo '' >> $WORK/b070/_buildid.s
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b070/ -c -o $WORK/b070/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=github_0com_1hyperledger_1fabric_x2dprotos_x2dgo_1common -m64 $WORK/b070/_buildid.s
+ar rcD $WORK/b070/_pkg_.a $WORK/b070/_go_.o $WORK/b070/_buildid.o
+/my/install/dir/tools/buildid -w $WORK/b070/_pkg_.a # internal
+cp $WORK/b070/_pkg_.a /home/ming/.cache/go-build/43/431da29f51537e9563a5d9fbb6e29d3aa17181bcf9a5951fb8f739ba418dce0b-d # internal
+mkdir -p $WORK/b067/
+mkdir -p $WORK/b067/_importcfgroot_/github.com/golang/protobuf
+ln -s /home/ming/.cache/go-build/1b/1bb6d5a5db816627e1062ba150d0d46854343438c2bc521092fd8d1c5fc57b06-d $WORK/b067/_importcfgroot_/github.com/golang/protobuf/libproto.a
+mkdir -p $WORK/b067/_importcfgroot_/github.com/golang/protobuf/ptypes
+ln -s /home/ming/.cache/go-build/ce/cefae79b7495fb9e1fe10ce11240bd96cf77bb6c89ec8c8deb156bba4e559181-d $WORK/b067/_importcfgroot_/github.com/golang/protobuf/ptypes/libempty.a
+ln -s /home/ming/.cache/go-build/8c/8c98af229b3af1fa22159b956519e50a85bc3c80caed0a4b2eee3b3074497693-d $WORK/b067/_importcfgroot_/github.com/golang/protobuf/ptypes/libtimestamp.a
+mkdir -p $WORK/b067/_importcfgroot_/github.com/hyperledger/fabric-protos-go
+ln -s $WORK/b070/_pkg_.a $WORK/b067/_importcfgroot_/github.com/hyperledger/fabric-protos-go/libcommon.a
+mkdir -p $WORK/b067/_importcfgroot_/github.com/hyperledger/fabric-protos-go/ledger
+ln -s $WORK/b072/_pkg_.a $WORK/b067/_importcfgroot_/github.com/hyperledger/fabric-protos-go/ledger/librwset.a
+mkdir -p $WORK/b067/_importcfgroot_/google.golang.org
+ln -s /home/ming/.cache/go-build/f3/f3838e99712be41b4c43f1242d8d5358cda9f789a6653472deed5e0e491ebcd5-d $WORK/b067/_importcfgroot_/google.golang.org/libgrpc.a
+mkdir -p $WORK/b067/_importcfgroot_/google.golang.org/grpc
+ln -s /home/ming/.cache/go-build/ea/ea623381bf232e6a7b243444e446b2468d900d483fea1d6e53d85b01549185dd-d $WORK/b067/_importcfgroot_/google.golang.org/grpc/libcodes.a
+ln -s /home/ming/.cache/go-build/c2/c2c71a693f7ea923038614d589703d23dcd6931b20ef86b2fb8702a6643cc690-d $WORK/b067/_importcfgroot_/google.golang.org/grpc/libstatus.a
+cd /home/ming/go/pkg/mod/github.com/hyperledger/fabric-protos-go@v0.0.0-20220827195505-ce4c067a561d/peer
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=github.com/hyperledger/fabric-protos-go/peer -o $WORK/b067/_go_.o -I $WORK/b067/_importcfgroot_ ./chaincode.pb.go ./chaincode_event.pb.go ./chaincode_shim.pb.go ./collection.pb.go ./configuration.pb.go ./events.pb.go ./peer.pb.go ./policy.pb.go ./proposal.pb.go ./proposal_response.pb.go ./query.pb.go ./resources.pb.go ./signed_cc_dep_spec.pb.go ./snapshot.pb.go ./transaction.pb.go
+echo '	.section .go.buildid,"e"' >> $WORK/b067/_buildid.s
+echo '	.byte 0x4a,0x77,0x5a,0x6c,0x7a,0x53,0x36,0x64' >> $WORK/b067/_buildid.s
+echo '	.byte 0x58,0x61,0x6d,0x68,0x59,0x50,0x77,0x47' >> $WORK/b067/_buildid.s
+echo '	.byte 0x66,0x32,0x72,0x5a,0x2f,0x4a,0x77,0x5a' >> $WORK/b067/_buildid.s
+echo '	.byte 0x6c,0x7a,0x53,0x36,0x64,0x58,0x61,0x6d' >> $WORK/b067/_buildid.s
+echo '	.byte 0x68,0x59,0x50,0x77,0x47,0x66,0x32,0x72' >> $WORK/b067/_buildid.s
+echo '	.byte 0x5a' >> $WORK/b067/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b067/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b067/_buildid.s
+echo '' >> $WORK/b067/_buildid.s
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b067/ -c -o $WORK/b067/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=github_0com_1hyperledger_1fabric_x2dprotos_x2dgo_1peer -m64 $WORK/b067/_buildid.s
+ar rcD $WORK/b067/_pkg_.a $WORK/b067/_go_.o $WORK/b067/_buildid.o
+/my/install/dir/tools/buildid -w $WORK/b067/_pkg_.a # internal
+cp $WORK/b067/_pkg_.a /home/ming/.cache/go-build/09/09e65326ba1ecb9ca28ca59a1860f18b181f0c4e38e6d716754a6c5e455848c7-d # internal
+mkdir -p $WORK/b063/
+mkdir -p $WORK/b063/_importcfgroot_/github.com/hyperledger/fabric-protos-go
+ln -s $WORK/b067/_pkg_.a $WORK/b063/_importcfgroot_/github.com/hyperledger/fabric-protos-go/libpeer.a
+mkdir -p $WORK/b063/_importcfgroot_/google.golang.org
+ln -s /home/ming/.cache/go-build/f3/f3838e99712be41b4c43f1242d8d5358cda9f789a6653472deed5e0e491ebcd5-d $WORK/b063/_importcfgroot_/google.golang.org/libgrpc.a
+mkdir -p $WORK/b063/_importcfgroot_/google.golang.org/grpc
+ln -s /home/ming/.cache/go-build/87/87b02e92d5b84605959090b24e8a4e24114ca2a2aaceb5616e9f083e8d1a4f01-d $WORK/b063/_importcfgroot_/google.golang.org/grpc/libcredentials.a
+ln -s /home/ming/.cache/go-build/3c/3ca1df396d8798543caf48a6c82f19d370326bfd6c30850126e5b2eb3ec739a2-d $WORK/b063/_importcfgroot_/google.golang.org/grpc/libkeepalive.a
+cd /home/ming/go/pkg/mod/github.com/hyperledger/fabric-chaincode-go@v0.0.0-20220720122508-9207360bbddd/shim/internal
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=github.com/hyperledger/fabric-chaincode-go/shim/internal -o $WORK/b063/_go_.o -I $WORK/b063/_importcfgroot_ ./client.go ./config.go ./server.go
+echo '	.section .go.buildid,"e"' >> $WORK/b063/_buildid.s
+echo '	.byte 0x68,0x6b,0x6c,0x2d,0x35,0x70,0x4d,0x64' >> $WORK/b063/_buildid.s
+echo '	.byte 0x50,0x54,0x66,0x52,0x54,0x61,0x78,0x65' >> $WORK/b063/_buildid.s
+echo '	.byte 0x4d,0x41,0x6d,0x52,0x2f,0x68,0x6b,0x6c' >> $WORK/b063/_buildid.s
+echo '	.byte 0x2d,0x35,0x70,0x4d,0x64,0x50,0x54,0x66' >> $WORK/b063/_buildid.s
+echo '	.byte 0x52,0x54,0x61,0x78,0x65,0x4d,0x41,0x6d' >> $WORK/b063/_buildid.s
+echo '	.byte 0x52' >> $WORK/b063/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b063/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b063/_buildid.s
+echo '' >> $WORK/b063/_buildid.s
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b063/ -c -o $WORK/b063/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=github_0com_1hyperledger_1fabric_x2dchaincode_x2dgo_1shim_1internal -m64 $WORK/b063/_buildid.s
+ar rcD $WORK/b063/_pkg_.a $WORK/b063/_go_.o $WORK/b063/_buildid.o
+/my/install/dir/tools/buildid -w $WORK/b063/_pkg_.a # internal
+cp $WORK/b063/_pkg_.a /home/ming/.cache/go-build/9b/9baabd10166acdae323791143bdb872257f337edf0502d88c53427e08e12280d-d # internal
+mkdir -p $WORK/b003/
+mkdir -p $WORK/b003/_importcfgroot_/github.com/golang/protobuf
+ln -s /home/ming/.cache/go-build/1b/1bb6d5a5db816627e1062ba150d0d46854343438c2bc521092fd8d1c5fc57b06-d $WORK/b003/_importcfgroot_/github.com/golang/protobuf/libproto.a
+mkdir -p $WORK/b003/_importcfgroot_/github.com/golang/protobuf/ptypes
+ln -s /home/ming/.cache/go-build/8c/8c98af229b3af1fa22159b956519e50a85bc3c80caed0a4b2eee3b3074497693-d $WORK/b003/_importcfgroot_/github.com/golang/protobuf/ptypes/libtimestamp.a
+mkdir -p $WORK/b003/_importcfgroot_/github.com/hyperledger/fabric-chaincode-go/shim
+ln -s $WORK/b063/_pkg_.a $WORK/b003/_importcfgroot_/github.com/hyperledger/fabric-chaincode-go/shim/libinternal.a
+mkdir -p $WORK/b003/_importcfgroot_/github.com/hyperledger/fabric-protos-go
+ln -s $WORK/b070/_pkg_.a $WORK/b003/_importcfgroot_/github.com/hyperledger/fabric-protos-go/libcommon.a
+mkdir -p $WORK/b003/_importcfgroot_/github.com/hyperledger/fabric-protos-go/ledger
+ln -s $WORK/b158/_pkg_.a $WORK/b003/_importcfgroot_/github.com/hyperledger/fabric-protos-go/ledger/libqueryresult.a
+ln -s $WORK/b067/_pkg_.a $WORK/b003/_importcfgroot_/github.com/hyperledger/fabric-protos-go/libpeer.a
+mkdir -p $WORK/b003/_importcfgroot_/google.golang.org/grpc
+ln -s /home/ming/.cache/go-build/3c/3ca1df396d8798543caf48a6c82f19d370326bfd6c30850126e5b2eb3ec739a2-d $WORK/b003/_importcfgroot_/google.golang.org/grpc/libkeepalive.a
+cd /home/ming/go/pkg/mod/github.com/hyperledger/fabric-chaincode-go@v0.0.0-20220720122508-9207360bbddd/shim
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=github.com/hyperledger/fabric-chaincode-go/shim -o $WORK/b003/_go_.o -I $WORK/b003/_importcfgroot_ ./chaincodeserver.go ./handler.go ./interfaces.go ./response.go ./shim.go ./stub.go
+echo '	.section .go.buildid,"e"' >> $WORK/b003/_buildid.s
+echo '	.byte 0x37,0x45,0x48,0x5a,0x6c,0x69,0x70,0x45' >> $WORK/b003/_buildid.s
+echo '	.byte 0x6c,0x62,0x6d,0x39,0x64,0x76,0x69,0x55' >> $WORK/b003/_buildid.s
+echo '	.byte 0x67,0x39,0x69,0x4d,0x2f,0x37,0x45,0x48' >> $WORK/b003/_buildid.s
+echo '	.byte 0x5a,0x6c,0x69,0x70,0x45,0x6c,0x62,0x6d' >> $WORK/b003/_buildid.s
+echo '	.byte 0x39,0x64,0x76,0x69,0x55,0x67,0x39,0x69' >> $WORK/b003/_buildid.s
+echo '	.byte 0x4d' >> $WORK/b003/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b003/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b003/_buildid.s
+echo '' >> $WORK/b003/_buildid.s
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b003/ -c -o $WORK/b003/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=github_0com_1hyperledger_1fabric_x2dchaincode_x2dgo_1shim -m64 $WORK/b003/_buildid.s
+ar rcD $WORK/b003/_pkg_.a $WORK/b003/_go_.o $WORK/b003/_buildid.o
+/my/install/dir/tools/buildid -w $WORK/b003/_pkg_.a # internal
+cp $WORK/b003/_pkg_.a /home/ming/.cache/go-build/78/78e4c47b769d07c859c68a764af671885ee729e23c851fc0c55a5443b842b287-d # internal
+mkdir -p $WORK/b001/
+mkdir -p $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric-chaincode-go
+ln -s $WORK/b003/_pkg_.a $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric-chaincode-go/libshim.a
+mkdir -p $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric-protos-go
+ln -s $WORK/b067/_pkg_.a $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric-protos-go/libpeer.a
+cd /home/ming/go/src/chaincode_repo/taintAnalysis/errPrivacyLeak
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=command-line-arguments -o $WORK/b001/_go_.o -I $WORK/b001/_importcfgroot_ ./privacyleak.go
+echo '	.section .go.buildid,"e"' >> $WORK/b001/_buildid.s
+echo '	.byte 0x57,0x32,0x7a,0x75,0x76,0x36,0x47,0x5f' >> $WORK/b001/_buildid.s
+echo '	.byte 0x41,0x69,0x63,0x6b,0x53,0x7a,0x67,0x38' >> $WORK/b001/_buildid.s
+echo '	.byte 0x78,0x4e,0x35,0x51,0x2f,0x57,0x32,0x7a' >> $WORK/b001/_buildid.s
+echo '	.byte 0x75,0x76,0x36,0x47,0x5f,0x41,0x69,0x63' >> $WORK/b001/_buildid.s
+echo '	.byte 0x6b,0x53,0x7a,0x67,0x38,0x78,0x4e,0x35' >> $WORK/b001/_buildid.s
+echo '	.byte 0x51' >> $WORK/b001/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b001/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b001/_buildid.s
+echo '' >> $WORK/b001/_buildid.s
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b001/ -c -o $WORK/b001/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=command_x2dline_x2darguments -m64 $WORK/b001/_buildid.s
+ar rcD $WORK/b001/_pkg_.a $WORK/b001/_go_.o $WORK/b001/_buildid.o
+/my/install/dir/tools/buildid -w $WORK/b001/_pkg_.a # internal
+cp $WORK/b001/_pkg_.a /home/ming/.cache/go-build/c0/c0f0bc9588a2e82620c460b1721684fe5f19b899fdfb25b253600ba68db9d746-d # internal

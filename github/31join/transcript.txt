@@ -1,0 +1,15 @@
+WORK=/tmp/go-build2623863699
+mkdir -p $WORK/b001/
+cd $WORK
+/my/install/dir/bin/llvm-goc -fgo-importcfg=/dev/null -c -x c - -o /dev/null || true
+mkdir -p $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric-chaincode-go
+ln -s /home/ming/.cache/go-build/78/78e4c47b769d07c859c68a764af671885ee729e23c851fc0c55a5443b842b287-d $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric-chaincode-go/libshim.a
+mkdir -p $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric-contract-api-go
+ln -s /home/ming/.cache/go-build/d7/d7b091c2ba0127f0c4137bf03bbed5cfcfe79e9acca162a98cef054ddb510a61-d $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric-contract-api-go/libcontractapi.a
+/my/install/dir/bin/llvm-goc -ffile-prefix-map=a=b -c -x c - -o /dev/null || true
+cd /home/ming/go/src/chaincode_repo/github/31
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=command-line-arguments -o $WORK/b001/_go_.o -I $WORK/b001/_importcfgroot_ ./31.go
+# command-line-arguments
+./31.go:202:17: error: reference to undefined field or method 'ReadAsset'
+./31.go:278:17: error: reference to undefined field or method 'ReadAsset'
+./31.go:297:29: error: reference to undefined field or method 'ReadTransferAgreement'

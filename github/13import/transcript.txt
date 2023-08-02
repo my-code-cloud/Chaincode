@@ -1,0 +1,7 @@
+WORK=/tmp/go-build573673968
+13.go:21:2: no required module provides package github.com/hyperledger/fabric/extensions/chaincode/api; to add it:
+	go get github.com/hyperledger/fabric/extensions/chaincode/api
+13.go:25:2: no required module provides package github.com/trustbloc/fabric-peer-ext/pkg/collections/offledger/dcas; to add it:
+	go get github.com/trustbloc/fabric-peer-ext/pkg/collections/offledger/dcas
+13.go:26:2: no required module provides package github.com/trustbloc/fabric-peer-ext/pkg/collections/offledger/dcas/client; to add it:
+	go get github.com/trustbloc/fabric-peer-ext/pkg/collections/offledger/dcas/client

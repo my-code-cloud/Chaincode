@@ -1,0 +1,18 @@
+WORK=/tmp/go-build865780233
+mkdir -p $WORK/b080/
+cd $WORK
+/my/install/dir/bin/llvm-goc -fgo-importcfg=/dev/null -c -x c - -o /dev/null || true
+mkdir -p $WORK/b080/_importcfgroot_/golang.org/x/net/http
+ln -s /home/ming/.cache/go-build/32/32423c731fbfa3a9d972f388da481bc1e8459f41469620617923e9e8660a495e-d $WORK/b080/_importcfgroot_/golang.org/x/net/http/libhttpguts.a
+mkdir -p $WORK/b080/_importcfgroot_/golang.org/x/net/http2
+ln -s /home/ming/.cache/go-build/1a/1a344a230183a9854855b62472e401a950950d86adc54f44f84d6f0af0f18ce4-d $WORK/b080/_importcfgroot_/golang.org/x/net/http2/libhpack.a
+mkdir -p $WORK/b080/_importcfgroot_/golang.org/x/net
+ln -s /home/ming/.cache/go-build/e3/e32f42111618bf3858c6b8d9ff4f137665eb6c5cf772894a8b4dc42095966c45-d $WORK/b080/_importcfgroot_/golang.org/x/net/libidna.a
+/my/install/dir/bin/llvm-goc -ffile-prefix-map=a=b -c -x c - -o /dev/null || true
+cd /home/ming/go/src/chaincode_repo/taintAnalysis/vendor/golang.org/x/net/http2
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=golang.org/x/net/http2 -o $WORK/b080/_go_.o -I $WORK/b080/_importcfgroot_ ./ciphers.go ./client_conn_pool.go ./databuffer.go ./errors.go ./flow.go ./frame.go ./go111.go ./gotrack.go ./headermap.go ./http2.go ./pipe.go ./server.go ./transport.go ./write.go ./writesched.go ./writesched_priority.go ./writesched_random.go
+# golang.org/x/net/http2
+../vendor/golang.org/x/net/http2/frame.go:17:32: error: import error for '.golang.org/x/net/http/httpguts.headerValueContainsToken': lookup of '$ret6' failed
+../vendor/golang.org/x/net/http2/frame.go:17:32: error: unrecognized binary operator
+ /home/ming/go/src/chaincode_repo/taintAnalysis/vendor/golang.org/x/net/http/httpguts/httplex.go:142:0: error: not enough arguments to return
+ /home/ming/go/src/chaincode_repo/taintAnalysis/vendor/golang.org/x/net/http/httpguts/httplex.go:144:0: error: not enough arguments to return

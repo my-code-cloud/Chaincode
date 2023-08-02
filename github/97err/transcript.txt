@@ -1,0 +1,58 @@
+WORK=/tmp/go-build2627608005
+mkdir -p $WORK/b174/
+cd $WORK
+/my/install/dir/bin/llvm-goc -fgo-importcfg=/dev/null -c -x c - -o /dev/null || true
+mkdir -p $WORK/b174/_importcfgroot_/go.uber.org
+ln -s /home/ming/.cache/go-build/ca/ca964adfc4c4080ae652861e5071d5dbde07ca3b994fb3a4349889eae7c84128-d $WORK/b174/_importcfgroot_/go.uber.org/libatomic.a
+ln -s /home/ming/.cache/go-build/ca/ca474725023fa96845f4cad5d7ec8cdd3422b6e56916c4627efcfca92fdb4878-d $WORK/b174/_importcfgroot_/go.uber.org/libmultierr.a
+mkdir -p $WORK/b174/_importcfgroot_/go.uber.org/zap
+ln -s /home/ming/.cache/go-build/f6/f6986adf175b2d0f86a9a0ab69b0f66334e6c3dd624dff44af73812fd4253e9b-d $WORK/b174/_importcfgroot_/go.uber.org/zap/libbuffer.a
+ln -s /home/ming/.cache/go-build/0e/0e737e0f2b57e7d449079d6ca0914eca5a0e392b7ca8f60ae1d2f485910f8769-d $WORK/b174/_importcfgroot_/go.uber.org/zap/libinternal.a
+mkdir -p $WORK/b174/_importcfgroot_/go.uber.org/zap/internal
+ln -s /home/ming/.cache/go-build/f6/f62087629fff8522072372b85ab859e39a774f61d265173ed5c826b0f46638e9-d $WORK/b174/_importcfgroot_/go.uber.org/zap/internal/libbufferpool.a
+ln -s /home/ming/.cache/go-build/d7/d753cafd99dc6e01e9755c8b670c2ffa55a80e2b01c4d2e000f07d7d0a721a5f-d $WORK/b174/_importcfgroot_/go.uber.org/zap/libzapcore.a
+/my/install/dir/bin/llvm-goc -ffile-prefix-map=a=b -c -x c - -o /dev/null || true
+cd /home/ming/go/pkg/mod/go.uber.org/zap@v1.23.0
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=go.uber.org/zap -o $WORK/b174/_go_.o -I $WORK/b174/_importcfgroot_ ./array.go ./array_go118.go ./config.go ./doc.go ./encoder.go ./error.go ./field.go ./flag.go ./global.go ./http_handler.go ./level.go ./logger.go ./options.go ./sink.go ./stacktrace.go ./sugar.go ./time.go ./writer.go
+# go.uber.org/zap
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:64:13: error: expected '('
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:64:16: error: expected ']'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:64:16: error: expected ';' or newline after top level declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:66:1: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:68:16: error: expected ']'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:70:17: error: expected ')'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:70:17: error: expected function name
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:70:17: error: expected ';' or newline after top level declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:72:34: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:74:3: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:75:2: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:76:2: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:77:1: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:81:27: error: expected ']'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:83:2: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:84:1: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:108:18: error: expected '('
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:108:21: error: expected ']'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:108:21: error: expected ';' or newline after top level declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:110:1: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:112:21: error: expected ']'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:114:22: error: expected ')'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:114:22: error: expected function name
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:114:22: error: expected ';' or newline after top level declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:123:3: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:123:34: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:125:3: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:126:2: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:127:2: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:128:1: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:145:15: error: expected '('
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:145:18: error: expected ']'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:145:18: error: expected ';' or newline after top level declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:147:1: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:149:18: error: expected ']'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:151:19: error: expected ')'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:151:19: error: expected function name
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:151:19: error: expected ';' or newline after top level declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:154:2: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:155:2: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:156:1: error: expected declaration

@@ -1,0 +1,57 @@
+WORK=/tmp/go-build3899700983
+mkdir -p $WORK/b001/
+cd $WORK
+/my/install/dir/bin/llvm-goc -fgo-importcfg=/dev/null -c -x c - -o /dev/null || true
+mkdir -p $WORK/b001/_importcfgroot_/github.com/KompiTech/fabric-cc-core/v2/pkg
+ln -s /home/ming/.cache/go-build/62/62e1ef189dab1f239c33fa72c4496a65e17054968710d23bc41a290e2ce713df-d $WORK/b001/_importcfgroot_/github.com/KompiTech/fabric-cc-core/v2/pkg/libkompiguard.a
+ln -s /home/ming/.cache/go-build/33/33949c3e68c0ea9ad87c02405d5187063e7e1fc9604206bba771570febcd2694-d $WORK/b001/_importcfgroot_/github.com/KompiTech/fabric-cc-core/v2/pkg/libkonst.a
+mkdir -p $WORK/b001/_importcfgroot_/github.com/KompiTech
+ln -s /home/ming/.cache/go-build/6b/6b6575c7865eb93feb54f9237bdf8f7cce2414dffdc67344b06cf9c29fc1eb29-d $WORK/b001/_importcfgroot_/github.com/KompiTech/librmap.a
+mkdir -p $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric-chaincode-go/pkg
+ln -s /home/ming/.cache/go-build/aa/aa962123326ad5c03913e0f7f58b4d46c820263a69a53f5668b96adb86430286-d $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric-chaincode-go/pkg/libcid.a
+mkdir -p $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric-chaincode-go
+ln -s /home/ming/.cache/go-build/78/78e4c47b769d07c859c68a764af671885ee729e23c851fc0c55a5443b842b287-d $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric-chaincode-go/libshim.a
+mkdir -p $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric-contract-api-go
+ln -s /home/ming/.cache/go-build/d7/d7b091c2ba0127f0c4137bf03bbed5cfcfe79e9acca162a98cef054ddb510a61-d $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric-contract-api-go/libcontractapi.a
+mkdir -p $WORK/b001/_importcfgroot_/github.com/pkg
+ln -s /home/ming/.cache/go-build/6b/6bd35083099c97274bc2f0e2f397f344f20d992601dc47ad9a4320ec89c1ef5f-d $WORK/b001/_importcfgroot_/github.com/pkg/liberrors.a
+/my/install/dir/bin/llvm-goc -ffile-prefix-map=a=b -c -x c - -o /dev/null || true
+cd /home/ming/go/src/chaincode_repo/github/63
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=command-line-arguments -o $WORK/b001/_go_.o -I $WORK/b001/_importcfgroot_ ./63.go
+# command-line-arguments
+./63.go:27:17: error: use of undefined type 'Registry'
+./63.go:246:26: error: reference to field 'GetThisIdentityResolved' in object which has no fields or methods
+./63.go:279:26: error: reference to field 'GetThisIdentityResolved' in object which has no fields or methods
+./63.go:366:24: error: reference to field 'GetThisIdentity' in object which has no fields or methods
+./63.go:92:34: error: use of undefined type 'Rmap'
+./63.go:92:34: error: use of undefined type 'Rmap'
+./63.go:92:34: error: use of undefined type 'Rmap'
+./63.go:379:23: error: reference to field 'GetAsset' in object which has no fields or methods
+./63.go:92:34: error: use of undefined type 'Rmap'
+./63.go:92:34: error: use of undefined type 'Rmap'
+./63.go:378:7: error: invalid type for range clause
+./63.go:378:3: error: range clause must have array, slice, string, map, or channel type
+./63.go:83:39: error: use of undefined type 'Stage'
+./63.go:83:35: error: invalid map key type
+./63.go:38:11: error: use of undefined type 'Logger'
+./63.go:91:26: error: use of undefined type 'bulkItem'
+./63.go:91:26: error: use of undefined type 'bulkItem'
+./63.go:92:34: error: use of undefined type 'Rmap'
+./63.go:92:34: error: use of undefined type 'Rmap'
+./63.go:92:34: error: use of undefined type 'Rmap'
+./63.go:92:34: error: use of undefined type 'Rmap'
+./63.go:92:34: error: use of undefined type 'Rmap'
+./63.go:92:34: error: use of undefined type 'Rmap'
+./63.go:102:76: error: use of undefined type 'IteratorInterface'
+./63.go:92:34: error: use of undefined type 'Rmap'
+./63.go:92:34: error: use of undefined type 'Rmap'
+./63.go:92:34: error: use of undefined type 'Rmap'
+./63.go:92:34: error: use of undefined type 'Rmap'
+./63.go:92:34: error: use of undefined type 'Rmap'
+./63.go:92:34: error: use of undefined type 'Rmap'
+./63.go:92:34: error: use of undefined type 'Rmap'
+./63.go:92:34: error: use of undefined type 'Rmap'
+./63.go:92:34: error: use of undefined type 'Rmap'
+./63.go:92:34: error: use of undefined type 'Rmap'
+./63.go:92:34: error: use of undefined type 'Rmap'
+./63.go:378:7: error: invalid type for range clause

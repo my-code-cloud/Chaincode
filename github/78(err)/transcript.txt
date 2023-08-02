@@ -1,0 +1,59 @@
+WORK=/tmp/go-build105031674
+mkdir -p $WORK/b001/
+cat >$WORK/b001/_gomod_.go << 'EOF' # internal
+package main
+import _ "unsafe"
+//go:linkname __set_debug_modinfo__ runtime.setmodinfo
+func __set_debug_modinfo__(string)
+func init() { __set_debug_modinfo__("0w\xaf\f\x92t\b\x02A\xe1\xc1\a\xe6\xd6\x18\xe6path\tcommand-line-arguments\ndep\tgithub.com/PuerkitoBio/purell\tv1.1.1\th1:WEQqlqaGbrPkxLJWfBwQmfEAE1Z7ONdDLqrN38tNFfI=\ndep\tgithub.com/PuerkitoBio/urlesc\tv0.0.0-20170810143723-de5bf2ad4578\th1:d+Bc7a5rLufV/sSk/8dngufqelfh6jnri85riMAaF/M=\ndep\tgithub.com/go-openapi/jsonpointer\tv0.19.5\th1:gZr+CIYByUqjcgeLXnQu2gHYQC9o73G2XUeOFYEICuY=\ndep\tgithub.com/go-openapi/jsonreference\tv0.19.5\th1:1WJP/wi4OjB4iV8KVbH73rQaoialJrqv8gitZLxGLtM=\ndep\tgithub.com/go-openapi/spec\tv0.20.3\th1:uH9RQ6vdyPSs2pSy9fL8QPspDF2AMIMPtmK5coSSjtQ=\ndep\tgithub.com/go-openapi/swag\tv0.19.15\th1:D2NRCBzS9/pEY3gP9Nl8aDqGUcPFrwG2p+CNFrLyrCM=\ndep\tgithub.com/gobuffalo/envy\tv1.9.0\th1:eZR0DuEgVLfeIb1zIKt3bT4YovIMf9O9LXQeCZLXpqE=\ndep\tgithub.com/gobuffalo/packd\tv1.0.0\th1:6ERZvJHfe24rfFmA9OaoKBdC7+c9sydrytMg8SdFGBM=\ndep\tgithub.com/gobuffalo/packr\tv1.30.1\th1:hu1fuVR3fXEZR7rXNW3h8rqSML8EVAf6KNm0NKO/wKg=\ndep\tgithub.com/golang/protobuf\tv1.5.2\th1:ROPKBNFfQgOUMifHyP+KYbvpjbdoFNs+aK7DXlji0Tw=\ndep\tgithub.com/hyperledger/fabric-chaincode-go\tv0.0.0-20220720122508-9207360bbddd\th1:AIa0b7UPrt8e1YN4/68vhNnPxy/Mrgq9d2bYJ6O/KTE=\ndep\tgithub.com/hyperledger/fabric-contract-api-go\tv1.1.1\th1:gDhOC18gjgElNZ85kFWsbCQq95hyUP/21n++m0Sv6B0=\ndep\tgithub.com/hyperledger/fabric-protos-go\tv0.0.0-20220827195505-ce4c067a561d\th1:Dk7Z9MjzZmz+pkpC7KbH6c3A9PEN9youAIjlMJw58ro=\ndep\tgithub.com/joho/godotenv\tv1.3.0\th1:Zjp+RcGpHhGlrMbJzXTrZZPrWj+1vfm90La1wgB6Bhc=\ndep\tgithub.com/josharian/intern\tv1.0.0\th1:vlS4z54oSdjm0bgjRigI+G1HpF+tI+9rE5LLzOg8HmY=\ndep\tgithub.com/mailru/easyjson\tv0.7.7\th1:UGYAvKxe3sBsEDzO8ZeWOSlIQfWFlxbzLZe7hwFURr0=\ndep\tgithub.com/rogpeppe/go-internal\tv1.8.0\th1:FCbCCtXNOY3UtUuHUYaghJg4y7Fd14rXifAYUAtL9R8=\ndep\tgithub.com/xeipuuv/gojsonpointer\tv0.0.0-20190905194746-02993c407bfb\th1:zGWFAtiMcyryUHoUjUJX0/lt1H2+i2Ka2n+D3DImSNo=\ndep\tgithub.com/xeipuuv/gojsonreference\tv0.0.0-20180127040603-bd5ef7bd5415\th1:EzJWgHovont7NscjpAxXsDA8S8BMYve8Y5+7cuRE7R0=\ndep\tgithub.com/xeipuuv/gojsonschema\tv1.2.0\th1:LhYJRs+L4fBtjZUfuSZIKGeVu0QRy8e5Xi7D17UxZ74=\ndep\tgolang.org/x/net\tv0.0.0-20220708220712-1185a9018129\th1:vucSRfWwTsoXro7P+3Cjlr6flUMtzCwzlvkxEQtHHB0=\ndep\tgolang.org/x/sys\tv0.0.0-20220715151400-c0bba94af5f8\th1:0A+M6Uqn+Eje4kHMK80dtF3JCXC4ykBgQG4Fe06QRhQ=\ndep\tgolang.org/x/text\tv0.3.7\th1:olpwvP2KacW1ZWvsR7uQhoyTYvKAupfQrRGBFM352Gk=\ndep\tgoogle.golang.org/genproto\tv0.0.0-20220718134204-073382fd740c\th1:xDUAhRezFnKF6wopxkOfdWYvz2XCiRQzndyDdpwFgbc=\ndep\tgoogle.golang.org/grpc\tv1.48.0\th1:rQOsyJ/8+ufEDJd/Gdsz7HG220Mh9HAhFHRGnIjda0w=\ndep\tgoogle.golang.org/protobuf\tv1.28.0\th1:w43yiav+6bVFTBQFZX0r7ipe9JQ1QsbMgHwbBziscLw=\ndep\tgopkg.in/yaml.v2\tv2.4.0\th1:D8xgwECY7CYvx+Y2n4sBz93Jn9JRvxdiyyo8CTfuKaY=\nbuild\t-compiler=gccgo\nbuild\tCGO_ENABLED=1\nbuild\tCGO_CFLAGS=\nbuild\tCGO_CPPFLAGS=\nbuild\tCGO_CXXFLAGS=\nbuild\tCGO_LDFLAGS=\nbuild\tGOARCH=amd64\nbuild\tGOEXPERIMENT=fieldtrack\nbuild\tGOOS=linux\nbuild\tGOAMD64=v1\n\xf92C1\x86\x18 r\x00\x82B\x10A\x16\xd8\xf2") }
+EOF
+cd $WORK
+/my/install/dir/bin/llvm-goc -fgo-importcfg=/dev/null -c -x c - -o /dev/null || true
+mkdir -p $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric-chaincode-go
+ln -s /home/ming/.cache/go-build/78/78e4c47b769d07c859c68a764af671885ee729e23c851fc0c55a5443b842b287-d $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric-chaincode-go/libshim.a
+mkdir -p $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric-contract-api-go
+ln -s /home/ming/.cache/go-build/d7/d7b091c2ba0127f0c4137bf03bbed5cfcfe79e9acca162a98cef054ddb510a61-d $WORK/b001/_importcfgroot_/github.com/hyperledger/fabric-contract-api-go/libcontractapi.a
+/my/install/dir/bin/llvm-goc -ffile-prefix-map=a=b -c -x c - -o /dev/null || true
+cd /home/ming/go/src/chaincode_repo/github/78
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -o $WORK/b001/_go_.o -I $WORK/b001/_importcfgroot_ ./78.go $WORK/b001/_gomod_.go
+# command-line-arguments
+./78.go:34:9: error: reference to undefined name 'verifyClientOrgMatchesPeerOrg'
+./78.go:44:21: error: reference to undefined name 'getCollectionName'
+./78.go:49:50: error: reference to undefined name 'bidKeyType'
+./78.go:32:112: error: use of undefined type 'FullBid'
+./78.go:69:8: error: reference to field 'Bidder' in object which has no fields or methods
+./78.go:32:112: error: use of undefined type 'FullBid'
+./78.go:89:137: error: use of undefined type 'BidHash'
+./78.go:108:47: error: reference to field 'Org' in object which has no fields or methods
+./78.go:110:17: error: reference to field 'Org' in object which has no fields or methods
+./78.go:32:112: error: use of undefined type 'FullBid'
+./78.go:126:11: error: reference to field 'Price' in object which has no fields or methods
+llvm-goc: /home/ming/workarea/llvm-project/llvm/tools/gollvm/gofrontend/go/types.cc:8645: Type* Map_type::bucket_type(Gogo*, int64_t, int64_t): assertion 'offset + ptr_size == size' failed.
+ #0 0x000055e04bcd2e04 PrintStackTraceSignalHandler(void*) (/my/install/dir/bin/llvm-goc+0x2352e04)
+ #1 0x000055e04bcd0a7e SignalHandler(int) (/my/install/dir/bin/llvm-goc+0x2350a7e)
+ #2 0x00007f293d39c420 __restore_rt (/lib/x86_64-linux-gnu/libpthread.so.0+0x14420)
+ #3 0x00007f293ce3900b raise (/lib/x86_64-linux-gnu/libc.so.6+0x4300b)
+ #4 0x00007f293ce18859 abort (/lib/x86_64-linux-gnu/libc.so.6+0x22859)
+ #5 0x000055e04a1087d6 (/my/install/dir/bin/llvm-goc+0x7887d6)
+ #6 0x000055e04a0f5d59 Map_type::bucket_type(Gogo*, long, long) (.part.0) (/my/install/dir/bin/llvm-goc+0x775d59)
+ #7 0x000055e04a0f5f7e Map_type::hiter_type(Gogo*) (/my/install/dir/bin/llvm-goc+0x775f7e)
+ #8 0x000055e04a0c5137 For_range_statement::lower_range_map(Gogo*, Map_type*, Block*, Block*, Named_object*, Temporary_statement*, Temporary_statement*, Temporary_statement*, Block**, Expression**, Block**, Block**) (.localalias) (/my/install/dir/bin/llvm-goc+0x745137)
+ #9 0x000055e04a0c82fa For_range_statement::do_lower(Gogo*, Named_object*, Block*, Statement_inserter*) (.localalias) (/my/install/dir/bin/llvm-goc+0x7482fa)
+#10 0x000055e04a056905 Lower_parse_tree::statement(Block*, unsigned long*, Statement*) (.localalias) (/my/install/dir/bin/llvm-goc+0x6d6905)
+#11 0x000055e04a0be646 Statement::traverse(Block*, unsigned long*, Traverse*) (/my/install/dir/bin/llvm-goc+0x73e646)
+#12 0x000055e04a05e8e2 Block::traverse(Traverse*) (.localalias) (/my/install/dir/bin/llvm-goc+0x6de8e2)
+#13 0x000055e04a05e8e2 Block::traverse(Traverse*) (.localalias) (/my/install/dir/bin/llvm-goc+0x6de8e2)
+#14 0x000055e04a066bfb Lower_parse_tree::function(Named_object*) (.localalias) (/my/install/dir/bin/llvm-goc+0x6e6bfb)
+#15 0x000055e04a05e693 Named_object::traverse(Traverse*, bool) (.localalias) (/my/install/dir/bin/llvm-goc+0x6de693)
+#16 0x000055e04a07b51d Gogo::lower_parse_tree() (/my/install/dir/bin/llvm-goc+0x6fb51d)
+#17 0x000055e04a054b35 go_parse_input_files(char const**, unsigned int, bool, bool) (/my/install/dir/bin/llvm-goc+0x6d4b35)
+#18 0x000055e04a03d6f6 gollvm::driver::CompileGoImpl::invokeFrontEnd() (.localalias) (/my/install/dir/bin/llvm-goc+0x6bd6f6)
+#19 0x000055e04a045088 gollvm::driver::CompileGo::performAction(gollvm::driver::Compilation&, gollvm::driver::Action const&, llvm::SmallVector<gollvm::driver::Artifact*, 3u> const&, gollvm::driver::Artifact const&) (.localalias) (/my/install/dir/bin/llvm-goc+0x6c5088)
+#20 0x000055e04a036d64 gollvm::driver::Driver::processAction(gollvm::driver::Action*, gollvm::driver::Compilation&, bool) (.localalias) (/my/install/dir/bin/llvm-goc+0x6b6d64)
+#21 0x000055e04a036f64 gollvm::driver::Driver::processActions(gollvm::driver::Compilation&) (/my/install/dir/bin/llvm-goc+0x6b6f64)
+#22 0x000055e049f678cc main (/my/install/dir/bin/llvm-goc+0x5e78cc)
+#23 0x00007f293ce1a083 __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x24083)
+#24 0x000055e04a02d9ae _start (/my/install/dir/bin/llvm-goc+0x6ad9ae)
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace.
+Stack dump:
+0.	Program arguments: /my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=/tmp/go-build105031674=/tmp/go-build -gno-record-gcc-switches -o $WORK/b001/_go_.o -I $WORK/b001/_importcfgroot_ ./78.go $WORK/b001/_gomod_.go

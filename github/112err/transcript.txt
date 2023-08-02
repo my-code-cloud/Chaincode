@@ -1,0 +1,414 @@
+WORK=/tmp/go-build2318466335
+# get https://goproxy.cn/github.com/project-flogo/flow/@v/v1.1.0.info
+# get https://goproxy.cn/github.com/project-flogo/flow/@v/v1.1.0.info: 200 OK (0.259s)
+mkdir -p $WORK/b160/
+mkdir -p $WORK/b173/
+mkdir -p $WORK/b174/
+mkdir -p $WORK/b167/
+mkdir -p $WORK/b177/
+cd $WORK
+/my/install/dir/bin/llvm-goc -fgo-importcfg=/dev/null -c -x c - -o /dev/null || true
+mkdir -p $WORK/b169/
+/my/install/dir/bin/llvm-goc -ffile-prefix-map=a=b -c -x c - -o /dev/null || true
+cd /home/ming/go/pkg/mod/github.com/araddon/dateparse@v0.0.0-20190622164848-0fb0a474d195
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=github.com/araddon/dateparse -o $WORK/b177/_go_.o -I $WORK/b177/_importcfgroot_ ./parseany.go
+cd /home/ming/go/pkg/mod/go.uber.org/zap@v1.23.0/internal/color
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=go.uber.org/zap/internal/color -o $WORK/b173/_go_.o -I $WORK/b173/_importcfgroot_ ./color.go
+cd /home/ming/go/pkg/mod/go.uber.org/zap@v1.23.0/internal/exit
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=go.uber.org/zap/internal/exit -o $WORK/b174/_go_.o -I $WORK/b174/_importcfgroot_ ./exit.go
+cd /home/ming/go/pkg/mod/go.uber.org/atomic@v1.7.0
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=go.uber.org/atomic -o $WORK/b167/_go_.o -I $WORK/b167/_importcfgroot_ ./bool.go ./bool_ext.go ./doc.go ./duration.go ./duration_ext.go ./error.go ./error_ext.go ./float64.go ./float64_ext.go ./gen.go ./int32.go ./int64.go ./nocmp.go ./string.go ./string_ext.go ./uint32.go ./uint64.go ./value.go
+cd /home/ming/go/pkg/mod/github.com/pkg/errors@v0.9.1
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=github.com/pkg/errors -o $WORK/b160/_go_.o -I $WORK/b160/_importcfgroot_ ./errors.go ./go113.go ./stack.go
+cd /home/ming/go/pkg/mod/go.uber.org/zap@v1.23.0/buffer
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=go.uber.org/zap/buffer -o $WORK/b169/_go_.o -I $WORK/b169/_importcfgroot_ ./buffer.go ./pool.go
+mkdir -p $WORK/b186/
+cd /home/ming/go/pkg/mod/github.com/project-flogo/core@v1.6.2/data/mapper/config
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=github.com/project-flogo/core/data/mapper/config -o $WORK/b186/_go_.o -I $WORK/b186/_importcfgroot_ ./config.go
+mkdir -p $WORK/b197/
+cd /home/ming/go/pkg/mod/github.com/project-flogo/flow@v1.1.0/util
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=github.com/project-flogo/flow/util -o $WORK/b197/_go_.o -I $WORK/b197/_importcfgroot_ ./modelvalidator.go
+mkdir -p $WORK/b200/
+cd /home/ming/go/pkg/mod/github.com/project-flogo/flow@v1.1.0/state/change
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=github.com/project-flogo/flow/state/change -o $WORK/b200/_go_.o -I $WORK/b200/_importcfgroot_ ./change.go
+mkdir -p $WORK/b202/
+cd /home/ming/go/pkg/mod/github.com/project-flogo/flow@v1.1.0/support/event
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=github.com/project-flogo/flow/support/event -o $WORK/b202/_go_.o -I $WORK/b202/_importcfgroot_ ./flowevents.go
+mkdir -p $WORK/b205/
+cd /home/ming/go/pkg/mod/github.com/xeipuuv/gojsonpointer@v0.0.0-20190905194746-02993c407bfb
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=github.com/xeipuuv/gojsonpointer -o $WORK/b205/_go_.o -I $WORK/b205/_importcfgroot_ ./pointer.go
+echo '	.section .go.buildid,"e"' >> $WORK/b173/_buildid.s
+echo '	.byte 0x65,0x6e,0x5a,0x63,0x41,0x4a,0x47,0x59' >> $WORK/b173/_buildid.s
+echo '	.byte 0x41,0x68,0x48,0x46,0x4f,0x78,0x48,0x35' >> $WORK/b173/_buildid.s
+echo '	.byte 0x7a,0x32,0x77,0x76,0x2f,0x65,0x6e,0x5a' >> $WORK/b173/_buildid.s
+echo '	.byte 0x63,0x41,0x4a,0x47,0x59,0x41,0x68,0x48' >> $WORK/b173/_buildid.s
+echo '	.byte 0x46,0x4f,0x78,0x48,0x35,0x7a,0x32,0x77' >> $WORK/b173/_buildid.s
+echo '	.byte 0x76' >> $WORK/b173/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b173/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b173/_buildid.s
+echo '' >> $WORK/b173/_buildid.s
+echo '	.section .go.buildid,"e"' >> $WORK/b202/_buildid.s
+echo '	.byte 0x64,0x72,0x74,0x4e,0x6c,0x75,0x47,0x52' >> $WORK/b202/_buildid.s
+echo '	.byte 0x53,0x2d,0x32,0x55,0x70,0x79,0x44,0x43' >> $WORK/b202/_buildid.s
+echo '	.byte 0x79,0x67,0x42,0x76,0x2f,0x64,0x72,0x74' >> $WORK/b202/_buildid.s
+echo '	.byte 0x4e,0x6c,0x75,0x47,0x52,0x53,0x2d,0x32' >> $WORK/b202/_buildid.s
+echo '	.byte 0x55,0x70,0x79,0x44,0x43,0x79,0x67,0x42' >> $WORK/b202/_buildid.s
+echo '	.byte 0x76' >> $WORK/b202/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b202/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b202/_buildid.s
+echo '' >> $WORK/b202/_buildid.s
+echo '	.section .go.buildid,"e"' >> $WORK/b200/_buildid.s
+echo '	.byte 0x63,0x56,0x59,0x39,0x65,0x5f,0x39,0x76' >> $WORK/b200/_buildid.s
+echo '	.byte 0x67,0x4e,0x2d,0x46,0x49,0x72,0x4c,0x4d' >> $WORK/b200/_buildid.s
+echo '	.byte 0x67,0x55,0x4c,0x6b,0x2f,0x63,0x56,0x59' >> $WORK/b200/_buildid.s
+echo '	.byte 0x39,0x65,0x5f,0x39,0x76,0x67,0x4e,0x2d' >> $WORK/b200/_buildid.s
+echo '	.byte 0x46,0x49,0x72,0x4c,0x4d,0x67,0x55,0x4c' >> $WORK/b200/_buildid.s
+echo '	.byte 0x6b' >> $WORK/b200/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b200/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b200/_buildid.s
+echo '' >> $WORK/b200/_buildid.s
+echo '	.section .go.buildid,"e"' >> $WORK/b197/_buildid.s
+echo '	.byte 0x63,0x57,0x68,0x69,0x62,0x73,0x70,0x66' >> $WORK/b197/_buildid.s
+echo '	.byte 0x4d,0x34,0x68,0x51,0x4e,0x73,0x56,0x37' >> $WORK/b197/_buildid.s
+echo '	.byte 0x65,0x56,0x46,0x75,0x2f,0x63,0x57,0x68' >> $WORK/b197/_buildid.s
+echo '	.byte 0x69,0x62,0x73,0x70,0x66,0x4d,0x34,0x68' >> $WORK/b197/_buildid.s
+echo '	.byte 0x51,0x4e,0x73,0x56,0x37,0x65,0x56,0x46' >> $WORK/b197/_buildid.s
+echo '	.byte 0x75' >> $WORK/b197/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b197/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b197/_buildid.s
+echo '' >> $WORK/b197/_buildid.s
+echo '	.section .go.buildid,"e"' >> $WORK/b186/_buildid.s
+echo '	.byte 0x33,0x30,0x78,0x35,0x67,0x58,0x71,0x2d' >> $WORK/b186/_buildid.s
+echo '	.byte 0x44,0x75,0x6b,0x67,0x32,0x73,0x38,0x55' >> $WORK/b186/_buildid.s
+echo '	.byte 0x4e,0x76,0x6a,0x56,0x2f,0x33,0x30,0x78' >> $WORK/b186/_buildid.s
+echo '	.byte 0x35,0x67,0x58,0x71,0x2d,0x44,0x75,0x6b' >> $WORK/b186/_buildid.s
+echo '	.byte 0x67,0x32,0x73,0x38,0x55,0x4e,0x76,0x6a' >> $WORK/b186/_buildid.s
+echo '	.byte 0x56' >> $WORK/b186/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b186/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b186/_buildid.s
+echo '' >> $WORK/b186/_buildid.s
+echo '	.section .go.buildid,"e"' >> $WORK/b174/_buildid.s
+echo '	.byte 0x68,0x41,0x33,0x78,0x46,0x69,0x62,0x32' >> $WORK/b174/_buildid.s
+echo '	.byte 0x57,0x65,0x65,0x4a,0x61,0x33,0x33,0x5f' >> $WORK/b174/_buildid.s
+echo '	.byte 0x7a,0x4f,0x38,0x41,0x2f,0x68,0x41,0x33' >> $WORK/b174/_buildid.s
+echo '	.byte 0x78,0x46,0x69,0x62,0x32,0x57,0x65,0x65' >> $WORK/b174/_buildid.s
+echo '	.byte 0x4a,0x61,0x33,0x33,0x5f,0x7a,0x4f,0x38' >> $WORK/b174/_buildid.s
+echo '	.byte 0x41' >> $WORK/b174/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b174/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b174/_buildid.s
+echo '' >> $WORK/b174/_buildid.s
+cd /home/ming/go/pkg/mod/github.com/project-flogo/flow@v1.1.0/state/change
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b200/ -c -o $WORK/b200/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=github_0com_1project_x2dflogo_1flow_1state_1change -m64 $WORK/b200/_buildid.s
+cd /home/ming/go/pkg/mod/github.com/project-flogo/flow@v1.1.0/util
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b197/ -c -o $WORK/b197/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=github_0com_1project_x2dflogo_1flow_1util -m64 $WORK/b197/_buildid.s
+cd /home/ming/go/pkg/mod/go.uber.org/zap@v1.23.0/internal/color
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b173/ -c -o $WORK/b173/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=go_0uber_0org_1zap_1internal_1color -m64 $WORK/b173/_buildid.s
+cd /home/ming/go/pkg/mod/github.com/project-flogo/core@v1.6.2/data/mapper/config
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b186/ -c -o $WORK/b186/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=github_0com_1project_x2dflogo_1core_1data_1mapper_1config -m64 $WORK/b186/_buildid.s
+cd /home/ming/go/pkg/mod/github.com/project-flogo/flow@v1.1.0/support/event
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b202/ -c -o $WORK/b202/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=github_0com_1project_x2dflogo_1flow_1support_1event -m64 $WORK/b202/_buildid.s
+cd /home/ming/go/pkg/mod/go.uber.org/zap@v1.23.0/internal/exit
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b174/ -c -o $WORK/b174/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=go_0uber_0org_1zap_1internal_1exit -m64 $WORK/b174/_buildid.s
+cd /home/ming/go/pkg/mod/github.com/project-flogo/flow@v1.1.0/state/change
+ar rcD $WORK/b200/_pkg_.a $WORK/b200/_go_.o $WORK/b200/_buildid.o
+cd /home/ming/go/pkg/mod/github.com/project-flogo/flow@v1.1.0/util
+ar rcD $WORK/b197/_pkg_.a $WORK/b197/_go_.o $WORK/b197/_buildid.o
+cd /home/ming/go/pkg/mod/github.com/project-flogo/core@v1.6.2/data/mapper/config
+ar rcD $WORK/b186/_pkg_.a $WORK/b186/_go_.o $WORK/b186/_buildid.o
+cd /home/ming/go/pkg/mod/go.uber.org/zap@v1.23.0/internal/color
+ar rcD $WORK/b173/_pkg_.a $WORK/b173/_go_.o $WORK/b173/_buildid.o
+cd /home/ming/go/pkg/mod/go.uber.org/zap@v1.23.0/internal/exit
+ar rcD $WORK/b174/_pkg_.a $WORK/b174/_go_.o $WORK/b174/_buildid.o
+cd /home/ming/go/pkg/mod/github.com/project-flogo/flow@v1.1.0/support/event
+ar rcD $WORK/b202/_pkg_.a $WORK/b202/_go_.o $WORK/b202/_buildid.o
+echo '	.section .go.buildid,"e"' >> $WORK/b169/_buildid.s
+echo '	.byte 0x71,0x71,0x73,0x7a,0x4c,0x31,0x4a,0x51' >> $WORK/b169/_buildid.s
+echo '	.byte 0x42,0x56,0x54,0x7a,0x41,0x35,0x64,0x42' >> $WORK/b169/_buildid.s
+echo '	.byte 0x57,0x30,0x6c,0x73,0x2f,0x71,0x71,0x73' >> $WORK/b169/_buildid.s
+echo '	.byte 0x7a,0x4c,0x31,0x4a,0x51,0x42,0x56,0x54' >> $WORK/b169/_buildid.s
+echo '	.byte 0x7a,0x41,0x35,0x64,0x42,0x57,0x30,0x6c' >> $WORK/b169/_buildid.s
+echo '	.byte 0x73' >> $WORK/b169/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b169/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b169/_buildid.s
+echo '' >> $WORK/b169/_buildid.s
+cd /home/ming/go/pkg/mod/go.uber.org/zap@v1.23.0/buffer
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b169/ -c -o $WORK/b169/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=go_0uber_0org_1zap_1buffer -m64 $WORK/b169/_buildid.s
+ar rcD $WORK/b169/_pkg_.a $WORK/b169/_go_.o $WORK/b169/_buildid.o
+/my/install/dir/tools/buildid -w $WORK/b202/_pkg_.a # internal
+/my/install/dir/tools/buildid -w $WORK/b186/_pkg_.a # internal
+/my/install/dir/tools/buildid -w $WORK/b173/_pkg_.a # internal
+/my/install/dir/tools/buildid -w $WORK/b200/_pkg_.a # internal
+cp $WORK/b173/_pkg_.a /home/ming/.cache/go-build/9f/9f1b74c8badf7d60ec7af7745ec72ecac15ab2cccdeb166ac9274663d2588edc-d # internal
+cp $WORK/b186/_pkg_.a /home/ming/.cache/go-build/32/322d934b091cf0c5f6f4e4e69e0f1f270a8e3a8a41434976a14b6a8cb4aabc14-d # internal
+/my/install/dir/tools/buildid -w $WORK/b197/_pkg_.a # internal
+mkdir -p $WORK/b185/
+cp $WORK/b202/_pkg_.a /home/ming/.cache/go-build/5c/5c0dc00b2c3e93a4c5d017bbe4f441bda84b95bb9ef31bf25394c7b353bfd3e5-d # internal
+/my/install/dir/tools/buildid -w $WORK/b174/_pkg_.a # internal
+mkdir -p $WORK/b185/_importcfgroot_/github.com/project-flogo/core/data/mapper
+cp $WORK/b197/_pkg_.a /home/ming/.cache/go-build/5c/5cf858386b15e7dd8c213dd5fe3318fc0a3c359086350d468bbae1b274f35245-d # internal
+cp $WORK/b200/_pkg_.a /home/ming/.cache/go-build/d0/d009fbad2499f401867f7bdf23c1ff12825abf5bc3956715c2172182c33d6793-d # internal
+ln -s $WORK/b186/_pkg_.a $WORK/b185/_importcfgroot_/github.com/project-flogo/core/data/mapper/libconfig.a
+cd /home/ming/go/pkg/mod/github.com/project-flogo/core@v1.6.2/data/path
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=github.com/project-flogo/core/data/path -o $WORK/b185/_go_.o -I $WORK/b185/_importcfgroot_ ./path.go
+cp $WORK/b174/_pkg_.a /home/ming/.cache/go-build/2c/2ca9272519833755953304b8786db421a96998c635c2e813f0d14a651d377972-d # internal
+echo '	.section .go.buildid,"e"' >> $WORK/b205/_buildid.s
+echo '	.byte 0x70,0x66,0x79,0x4b,0x53,0x79,0x73,0x44' >> $WORK/b205/_buildid.s
+echo '	.byte 0x54,0x32,0x56,0x49,0x6e,0x6c,0x6e,0x51' >> $WORK/b205/_buildid.s
+echo '	.byte 0x2d,0x37,0x57,0x46,0x2f,0x70,0x66,0x79' >> $WORK/b205/_buildid.s
+echo '	.byte 0x4b,0x53,0x79,0x73,0x44,0x54,0x32,0x56' >> $WORK/b205/_buildid.s
+echo '	.byte 0x49,0x6e,0x6c,0x6e,0x51,0x2d,0x37,0x57' >> $WORK/b205/_buildid.s
+echo '	.byte 0x46' >> $WORK/b205/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b205/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b205/_buildid.s
+echo '' >> $WORK/b205/_buildid.s
+cd /home/ming/go/pkg/mod/github.com/xeipuuv/gojsonpointer@v0.0.0-20190905194746-02993c407bfb
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b205/ -c -o $WORK/b205/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=github_0com_1xeipuuv_1gojsonpointer -m64 $WORK/b205/_buildid.s
+/my/install/dir/tools/buildid -w $WORK/b169/_pkg_.a # internal
+cp $WORK/b169/_pkg_.a /home/ming/.cache/go-build/f6/f6986adf175b2d0f86a9a0ab69b0f66334e6c3dd624dff44af73812fd4253e9b-d # internal
+mkdir -p $WORK/b172/
+mkdir -p $WORK/b172/_importcfgroot_/go.uber.org/zap
+ln -s $WORK/b169/_pkg_.a $WORK/b172/_importcfgroot_/go.uber.org/zap/libbuffer.a
+cd /home/ming/go/pkg/mod/go.uber.org/zap@v1.23.0/internal/bufferpool
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=go.uber.org/zap/internal/bufferpool -o $WORK/b172/_go_.o -I $WORK/b172/_importcfgroot_ ./bufferpool.go
+cd /home/ming/go/pkg/mod/github.com/xeipuuv/gojsonpointer@v0.0.0-20190905194746-02993c407bfb
+ar rcD $WORK/b205/_pkg_.a $WORK/b205/_go_.o $WORK/b205/_buildid.o
+/my/install/dir/tools/buildid -w $WORK/b205/_pkg_.a # internal
+cp $WORK/b205/_pkg_.a /home/ming/.cache/go-build/a4/a4d25ad83debfb4a56103c77ee9c603e338fd55edd461c3db91826b5b7de2a24-d # internal
+mkdir -p $WORK/b204/
+mkdir -p $WORK/b204/_importcfgroot_/github.com/xeipuuv
+ln -s $WORK/b205/_pkg_.a $WORK/b204/_importcfgroot_/github.com/xeipuuv/libgojsonpointer.a
+cd /home/ming/go/pkg/mod/github.com/xeipuuv/gojsonreference@v0.0.0-20180127040603-bd5ef7bd5415
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=github.com/xeipuuv/gojsonreference -o $WORK/b204/_go_.o -I $WORK/b204/_importcfgroot_ ./reference.go
+echo '	.section .go.buildid,"e"' >> $WORK/b172/_buildid.s
+echo '	.byte 0x47,0x6f,0x74,0x72,0x6a,0x38,0x4d,0x64' >> $WORK/b172/_buildid.s
+echo '	.byte 0x58,0x38,0x58,0x64,0x46,0x69,0x39,0x4d' >> $WORK/b172/_buildid.s
+echo '	.byte 0x52,0x63,0x36,0x59,0x2f,0x47,0x6f,0x74' >> $WORK/b172/_buildid.s
+echo '	.byte 0x72,0x6a,0x38,0x4d,0x64,0x58,0x38,0x58' >> $WORK/b172/_buildid.s
+echo '	.byte 0x64,0x46,0x69,0x39,0x4d,0x52,0x63,0x36' >> $WORK/b172/_buildid.s
+echo '	.byte 0x59' >> $WORK/b172/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b172/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b172/_buildid.s
+echo '' >> $WORK/b172/_buildid.s
+cd /home/ming/go/pkg/mod/go.uber.org/zap@v1.23.0/internal/bufferpool
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b172/ -c -o $WORK/b172/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=go_0uber_0org_1zap_1internal_1bufferpool -m64 $WORK/b172/_buildid.s
+ar rcD $WORK/b172/_pkg_.a $WORK/b172/_go_.o $WORK/b172/_buildid.o
+/my/install/dir/tools/buildid -w $WORK/b172/_pkg_.a # internal
+cp $WORK/b172/_pkg_.a /home/ming/.cache/go-build/f6/f62087629fff8522072372b85ab859e39a774f61d265173ed5c826b0f46638e9-d # internal
+echo '	.section .go.buildid,"e"' >> $WORK/b160/_buildid.s
+echo '	.byte 0x6e,0x74,0x5a,0x70,0x4a,0x61,0x4c,0x68' >> $WORK/b160/_buildid.s
+echo '	.byte 0x33,0x44,0x78,0x77,0x67,0x67,0x44,0x77' >> $WORK/b160/_buildid.s
+echo '	.byte 0x38,0x30,0x73,0x5a,0x2f,0x6e,0x74,0x5a' >> $WORK/b160/_buildid.s
+echo '	.byte 0x70,0x4a,0x61,0x4c,0x68,0x33,0x44,0x78' >> $WORK/b160/_buildid.s
+echo '	.byte 0x77,0x67,0x67,0x44,0x77,0x38,0x30,0x73' >> $WORK/b160/_buildid.s
+echo '	.byte 0x5a' >> $WORK/b160/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b160/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b160/_buildid.s
+echo '' >> $WORK/b160/_buildid.s
+cd /home/ming/go/pkg/mod/github.com/pkg/errors@v0.9.1
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b160/ -c -o $WORK/b160/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=github_0com_1pkg_1errors -m64 $WORK/b160/_buildid.s
+ar rcD $WORK/b160/_pkg_.a $WORK/b160/_go_.o $WORK/b160/_buildid.o
+/my/install/dir/tools/buildid -w $WORK/b160/_pkg_.a # internal
+echo '	.section .go.buildid,"e"' >> $WORK/b167/_buildid.s
+echo '	.byte 0x63,0x4c,0x6b,0x2d,0x48,0x74,0x35,0x4a' >> $WORK/b167/_buildid.s
+echo '	.byte 0x33,0x6d,0x5f,0x34,0x4a,0x33,0x5f,0x6c' >> $WORK/b167/_buildid.s
+echo '	.byte 0x37,0x46,0x62,0x64,0x2f,0x63,0x4c,0x6b' >> $WORK/b167/_buildid.s
+echo '	.byte 0x2d,0x48,0x74,0x35,0x4a,0x33,0x6d,0x5f' >> $WORK/b167/_buildid.s
+echo '	.byte 0x34,0x4a,0x33,0x5f,0x6c,0x37,0x46,0x62' >> $WORK/b167/_buildid.s
+echo '	.byte 0x64' >> $WORK/b167/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b167/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b167/_buildid.s
+echo '' >> $WORK/b167/_buildid.s
+cd /home/ming/go/pkg/mod/go.uber.org/atomic@v1.7.0
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b167/ -c -o $WORK/b167/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=go_0uber_0org_1atomic -m64 $WORK/b167/_buildid.s
+cp $WORK/b160/_pkg_.a /home/ming/.cache/go-build/6b/6bd35083099c97274bc2f0e2f397f344f20d992601dc47ad9a4320ec89c1ef5f-d # internal
+ar rcD $WORK/b167/_pkg_.a $WORK/b167/_go_.o $WORK/b167/_buildid.o
+/my/install/dir/tools/buildid -w $WORK/b167/_pkg_.a # internal
+cp $WORK/b167/_pkg_.a /home/ming/.cache/go-build/ca/ca964adfc4c4080ae652861e5071d5dbde07ca3b994fb3a4349889eae7c84128-d # internal
+mkdir -p $WORK/b168/
+mkdir -p $WORK/b168/_importcfgroot_/go.uber.org
+echo '	.section .go.buildid,"e"' >> $WORK/b204/_buildid.s
+echo '	.byte 0x67,0x36,0x37,0x6e,0x2d,0x35,0x52,0x2d' >> $WORK/b204/_buildid.s
+echo '	.byte 0x4f,0x4f,0x31,0x71,0x4c,0x6b,0x79,0x57' >> $WORK/b204/_buildid.s
+echo '	.byte 0x75,0x63,0x49,0x61,0x2f,0x67,0x36,0x37' >> $WORK/b204/_buildid.s
+echo '	.byte 0x6e,0x2d,0x35,0x52,0x2d,0x4f,0x4f,0x31' >> $WORK/b204/_buildid.s
+echo '	.byte 0x71,0x4c,0x6b,0x79,0x57,0x75,0x63,0x49' >> $WORK/b204/_buildid.s
+echo '	.byte 0x61' >> $WORK/b204/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b204/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b204/_buildid.s
+echo '' >> $WORK/b204/_buildid.s
+cd /home/ming/go/pkg/mod/github.com/xeipuuv/gojsonreference@v0.0.0-20180127040603-bd5ef7bd5415
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b204/ -c -o $WORK/b204/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=github_0com_1xeipuuv_1gojsonreference -m64 $WORK/b204/_buildid.s
+ln -s $WORK/b167/_pkg_.a $WORK/b168/_importcfgroot_/go.uber.org/libatomic.a
+cd /home/ming/go/pkg/mod/go.uber.org/multierr@v1.6.0
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=go.uber.org/multierr -o $WORK/b168/_go_.o -I $WORK/b168/_importcfgroot_ ./error.go ./go113.go
+cd /home/ming/go/pkg/mod/github.com/xeipuuv/gojsonreference@v0.0.0-20180127040603-bd5ef7bd5415
+ar rcD $WORK/b204/_pkg_.a $WORK/b204/_go_.o $WORK/b204/_buildid.o
+/my/install/dir/tools/buildid -w $WORK/b204/_pkg_.a # internal
+cp $WORK/b204/_pkg_.a /home/ming/.cache/go-build/13/13aad1ae7913908a5528842aba6bd9208d0a3fd9c853ff43af99c64b9242fd0f-d # internal
+mkdir -p $WORK/b203/
+mkdir -p $WORK/b203/_importcfgroot_/github.com/xeipuuv
+ln -s $WORK/b204/_pkg_.a $WORK/b203/_importcfgroot_/github.com/xeipuuv/libgojsonreference.a
+cd /home/ming/go/pkg/mod/github.com/xeipuuv/gojsonschema@v1.2.0
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=github.com/xeipuuv/gojsonschema -o $WORK/b203/_go_.o -I $WORK/b203/_importcfgroot_ ./draft.go ./errors.go ./format_checkers.go ./internalLog.go ./jsonContext.go ./jsonLoader.go ./locales.go ./result.go ./schema.go ./schemaLoader.go ./schemaPool.go ./schemaReferencePool.go ./schemaType.go ./subSchema.go ./types.go ./utils.go ./validation.go
+echo '	.section .go.buildid,"e"' >> $WORK/b168/_buildid.s
+echo '	.byte 0x58,0x64,0x68,0x50,0x72,0x44,0x54,0x63' >> $WORK/b168/_buildid.s
+echo '	.byte 0x4d,0x78,0x4b,0x70,0x61,0x52,0x65,0x77' >> $WORK/b168/_buildid.s
+echo '	.byte 0x49,0x78,0x39,0x76,0x2f,0x58,0x64,0x68' >> $WORK/b168/_buildid.s
+echo '	.byte 0x50,0x72,0x44,0x54,0x63,0x4d,0x78,0x4b' >> $WORK/b168/_buildid.s
+echo '	.byte 0x70,0x61,0x52,0x65,0x77,0x49,0x78,0x39' >> $WORK/b168/_buildid.s
+echo '	.byte 0x76' >> $WORK/b168/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b168/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b168/_buildid.s
+echo '' >> $WORK/b168/_buildid.s
+echo '	.section .go.buildid,"e"' >> $WORK/b185/_buildid.s
+echo '	.byte 0x4b,0x38,0x55,0x69,0x76,0x6c,0x49,0x70' >> $WORK/b185/_buildid.s
+echo '	.byte 0x75,0x56,0x6d,0x33,0x41,0x6a,0x48,0x2d' >> $WORK/b185/_buildid.s
+echo '	.byte 0x4d,0x45,0x32,0x76,0x2f,0x4b,0x38,0x55' >> $WORK/b185/_buildid.s
+echo '	.byte 0x69,0x76,0x6c,0x49,0x70,0x75,0x56,0x6d' >> $WORK/b185/_buildid.s
+echo '	.byte 0x33,0x41,0x6a,0x48,0x2d,0x4d,0x45,0x32' >> $WORK/b185/_buildid.s
+echo '	.byte 0x76' >> $WORK/b185/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b185/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b185/_buildid.s
+echo '' >> $WORK/b185/_buildid.s
+cd /home/ming/go/pkg/mod/github.com/project-flogo/core@v1.6.2/data/path
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b185/ -c -o $WORK/b185/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=github_0com_1project_x2dflogo_1core_1data_1path -m64 $WORK/b185/_buildid.s
+cd /home/ming/go/pkg/mod/go.uber.org/multierr@v1.6.0
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b168/ -c -o $WORK/b168/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=go_0uber_0org_1multierr -m64 $WORK/b168/_buildid.s
+cd /home/ming/go/pkg/mod/github.com/project-flogo/core@v1.6.2/data/path
+ar rcD $WORK/b185/_pkg_.a $WORK/b185/_go_.o $WORK/b185/_buildid.o
+cd /home/ming/go/pkg/mod/go.uber.org/multierr@v1.6.0
+ar rcD $WORK/b168/_pkg_.a $WORK/b168/_go_.o $WORK/b168/_buildid.o
+/my/install/dir/tools/buildid -w $WORK/b185/_pkg_.a # internal
+/my/install/dir/tools/buildid -w $WORK/b168/_pkg_.a # internal
+cp $WORK/b168/_pkg_.a /home/ming/.cache/go-build/ca/ca474725023fa96845f4cad5d7ec8cdd3422b6e56916c4627efcfca92fdb4878-d # internal
+cp $WORK/b185/_pkg_.a /home/ming/.cache/go-build/b2/b231ebd9cd24ad455739635f0135972752e0060fc8fc7de28fc19f3595657a8b-d # internal
+mkdir -p $WORK/b171/
+mkdir -p $WORK/b171/_importcfgroot_/go.uber.org
+ln -s $WORK/b167/_pkg_.a $WORK/b171/_importcfgroot_/go.uber.org/libatomic.a
+ln -s $WORK/b168/_pkg_.a $WORK/b171/_importcfgroot_/go.uber.org/libmultierr.a
+mkdir -p $WORK/b171/_importcfgroot_/go.uber.org/zap
+ln -s $WORK/b169/_pkg_.a $WORK/b171/_importcfgroot_/go.uber.org/zap/libbuffer.a
+mkdir -p $WORK/b171/_importcfgroot_/go.uber.org/zap/internal
+ln -s $WORK/b172/_pkg_.a $WORK/b171/_importcfgroot_/go.uber.org/zap/internal/libbufferpool.a
+ln -s $WORK/b173/_pkg_.a $WORK/b171/_importcfgroot_/go.uber.org/zap/internal/libcolor.a
+ln -s $WORK/b174/_pkg_.a $WORK/b171/_importcfgroot_/go.uber.org/zap/internal/libexit.a
+cd /home/ming/go/pkg/mod/go.uber.org/zap@v1.23.0/zapcore
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=go.uber.org/zap/zapcore -o $WORK/b171/_go_.o -I $WORK/b171/_importcfgroot_ ./buffered_write_syncer.go ./clock.go ./console_encoder.go ./core.go ./doc.go ./encoder.go ./entry.go ./error.go ./field.go ./hook.go ./increase_level.go ./json_encoder.go ./level.go ./level_strings.go ./marshaler.go ./memory_encoder.go ./reflected_encoder.go ./sampler.go ./tee.go ./write_syncer.go
+echo '	.section .go.buildid,"e"' >> $WORK/b177/_buildid.s
+echo '	.byte 0x73,0x2d,0x2d,0x39,0x35,0x6f,0x4e,0x42' >> $WORK/b177/_buildid.s
+echo '	.byte 0x4a,0x6f,0x5a,0x56,0x43,0x33,0x38,0x6b' >> $WORK/b177/_buildid.s
+echo '	.byte 0x41,0x6d,0x79,0x39,0x2f,0x73,0x2d,0x2d' >> $WORK/b177/_buildid.s
+echo '	.byte 0x39,0x35,0x6f,0x4e,0x42,0x4a,0x6f,0x5a' >> $WORK/b177/_buildid.s
+echo '	.byte 0x56,0x43,0x33,0x38,0x6b,0x41,0x6d,0x79' >> $WORK/b177/_buildid.s
+echo '	.byte 0x39' >> $WORK/b177/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b177/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b177/_buildid.s
+echo '' >> $WORK/b177/_buildid.s
+cd /home/ming/go/pkg/mod/github.com/araddon/dateparse@v0.0.0-20190622164848-0fb0a474d195
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b177/ -c -o $WORK/b177/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=github_0com_1araddon_1dateparse -m64 $WORK/b177/_buildid.s
+ar rcD $WORK/b177/_pkg_.a $WORK/b177/_go_.o $WORK/b177/_buildid.o
+/my/install/dir/tools/buildid -w $WORK/b177/_pkg_.a # internal
+cp $WORK/b177/_pkg_.a /home/ming/.cache/go-build/d1/d1bd41fd005ecea540124d0eebf5135b4bfa882533c304e80ac5691f38fafd95-d # internal
+echo '	.section .go.buildid,"e"' >> $WORK/b171/_buildid.s
+echo '	.byte 0x59,0x6f,0x6d,0x4a,0x66,0x31,0x4f,0x32' >> $WORK/b171/_buildid.s
+echo '	.byte 0x48,0x32,0x4d,0x37,0x6f,0x70,0x65,0x6e' >> $WORK/b171/_buildid.s
+echo '	.byte 0x69,0x75,0x46,0x32,0x2f,0x59,0x6f,0x6d' >> $WORK/b171/_buildid.s
+echo '	.byte 0x4a,0x66,0x31,0x4f,0x32,0x48,0x32,0x4d' >> $WORK/b171/_buildid.s
+echo '	.byte 0x37,0x6f,0x70,0x65,0x6e,0x69,0x75,0x46' >> $WORK/b171/_buildid.s
+echo '	.byte 0x32' >> $WORK/b171/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b171/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b171/_buildid.s
+echo '' >> $WORK/b171/_buildid.s
+cd /home/ming/go/pkg/mod/go.uber.org/zap@v1.23.0/zapcore
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b171/ -c -o $WORK/b171/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=go_0uber_0org_1zap_1zapcore -m64 $WORK/b171/_buildid.s
+ar rcD $WORK/b171/_pkg_.a $WORK/b171/_go_.o $WORK/b171/_buildid.o
+/my/install/dir/tools/buildid -w $WORK/b171/_pkg_.a # internal
+cp $WORK/b171/_pkg_.a /home/ming/.cache/go-build/d7/d753cafd99dc6e01e9755c8b670c2ffa55a80e2b01c4d2e000f07d7d0a721a5f-d # internal
+mkdir -p $WORK/b170/
+mkdir -p $WORK/b170/_importcfgroot_/go.uber.org/zap
+ln -s $WORK/b171/_pkg_.a $WORK/b170/_importcfgroot_/go.uber.org/zap/libzapcore.a
+cd /home/ming/go/pkg/mod/go.uber.org/zap@v1.23.0/internal
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=go.uber.org/zap/internal -o $WORK/b170/_go_.o -I $WORK/b170/_importcfgroot_ ./level_enabler.go
+echo '	.section .go.buildid,"e"' >> $WORK/b170/_buildid.s
+echo '	.byte 0x69,0x54,0x48,0x4a,0x45,0x53,0x47,0x34' >> $WORK/b170/_buildid.s
+echo '	.byte 0x41,0x41,0x41,0x34,0x74,0x54,0x77,0x42' >> $WORK/b170/_buildid.s
+echo '	.byte 0x42,0x65,0x44,0x45,0x2f,0x69,0x54,0x48' >> $WORK/b170/_buildid.s
+echo '	.byte 0x4a,0x45,0x53,0x47,0x34,0x41,0x41,0x41' >> $WORK/b170/_buildid.s
+echo '	.byte 0x34,0x74,0x54,0x77,0x42,0x42,0x65,0x44' >> $WORK/b170/_buildid.s
+echo '	.byte 0x45' >> $WORK/b170/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b170/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b170/_buildid.s
+echo '' >> $WORK/b170/_buildid.s
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b170/ -c -o $WORK/b170/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=go_0uber_0org_1zap_1internal -m64 $WORK/b170/_buildid.s
+ar rcD $WORK/b170/_pkg_.a $WORK/b170/_go_.o $WORK/b170/_buildid.o
+/my/install/dir/tools/buildid -w $WORK/b170/_pkg_.a # internal
+cp $WORK/b170/_pkg_.a /home/ming/.cache/go-build/0e/0e737e0f2b57e7d449079d6ca0914eca5a0e392b7ca8f60ae1d2f485910f8769-d # internal
+mkdir -p $WORK/b166/
+mkdir -p $WORK/b166/_importcfgroot_/go.uber.org
+ln -s $WORK/b167/_pkg_.a $WORK/b166/_importcfgroot_/go.uber.org/libatomic.a
+ln -s $WORK/b168/_pkg_.a $WORK/b166/_importcfgroot_/go.uber.org/libmultierr.a
+mkdir -p $WORK/b166/_importcfgroot_/go.uber.org/zap
+ln -s $WORK/b169/_pkg_.a $WORK/b166/_importcfgroot_/go.uber.org/zap/libbuffer.a
+ln -s $WORK/b170/_pkg_.a $WORK/b166/_importcfgroot_/go.uber.org/zap/libinternal.a
+mkdir -p $WORK/b166/_importcfgroot_/go.uber.org/zap/internal
+ln -s $WORK/b172/_pkg_.a $WORK/b166/_importcfgroot_/go.uber.org/zap/internal/libbufferpool.a
+ln -s $WORK/b171/_pkg_.a $WORK/b166/_importcfgroot_/go.uber.org/zap/libzapcore.a
+cd /home/ming/go/pkg/mod/go.uber.org/zap@v1.23.0
+/my/install/dir/bin/llvm-goc -c -O2 -g -m64 -fdebug-prefix-map=$WORK=/tmp/go-build -gno-record-gcc-switches -fgo-pkgpath=go.uber.org/zap -o $WORK/b166/_go_.o -I $WORK/b166/_importcfgroot_ ./array.go ./array_go118.go ./config.go ./doc.go ./encoder.go ./error.go ./field.go ./flag.go ./global.go ./http_handler.go ./level.go ./logger.go ./options.go ./sink.go ./stacktrace.go ./sugar.go ./time.go ./writer.go
+# go.uber.org/zap
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:64:13: error: expected '('
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:64:16: error: expected ']'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:64:16: error: expected ';' or newline after top level declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:66:1: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:68:16: error: expected ']'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:70:17: error: expected ')'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:70:17: error: expected function name
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:70:17: error: expected ';' or newline after top level declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:72:34: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:74:3: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:75:2: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:76:2: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:77:1: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:81:27: error: expected ']'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:83:2: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:84:1: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:108:18: error: expected '('
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:108:21: error: expected ']'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:108:21: error: expected ';' or newline after top level declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:110:1: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:112:21: error: expected ']'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:114:22: error: expected ')'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:114:22: error: expected function name
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:114:22: error: expected ';' or newline after top level declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:123:3: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:123:34: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:125:3: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:126:2: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:127:2: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:128:1: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:145:15: error: expected '('
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:145:18: error: expected ']'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:145:18: error: expected ';' or newline after top level declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:147:1: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:149:18: error: expected ']'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:151:19: error: expected ')'
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:151:19: error: expected function name
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:151:19: error: expected ';' or newline after top level declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:154:2: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:155:2: error: expected declaration
+../../../../pkg/mod/go.uber.org/zap@v1.23.0/array_go118.go:156:1: error: expected declaration
+echo '	.section .go.buildid,"e"' >> $WORK/b203/_buildid.s
+echo '	.byte 0x49,0x35,0x53,0x38,0x71,0x79,0x4f,0x39' >> $WORK/b203/_buildid.s
+echo '	.byte 0x5a,0x56,0x6b,0x6d,0x66,0x6d,0x71,0x69' >> $WORK/b203/_buildid.s
+echo '	.byte 0x48,0x6a,0x41,0x47,0x2f,0x49,0x35,0x53' >> $WORK/b203/_buildid.s
+echo '	.byte 0x38,0x71,0x79,0x4f,0x39,0x5a,0x56,0x6b' >> $WORK/b203/_buildid.s
+echo '	.byte 0x6d,0x66,0x6d,0x71,0x69,0x48,0x6a,0x41' >> $WORK/b203/_buildid.s
+echo '	.byte 0x47' >> $WORK/b203/_buildid.s
+echo '	.section .note.GNU-stack,"",@progbits' >> $WORK/b203/_buildid.s
+echo '	.section .note.GNU-split-stack,"",@progbits' >> $WORK/b203/_buildid.s
+echo '' >> $WORK/b203/_buildid.s
+cd /home/ming/go/pkg/mod/github.com/xeipuuv/gojsonschema@v1.2.0
+/my/install/dir/bin/llvm-goc -xassembler-with-cpp -I $WORK/b203/ -c -o $WORK/b203/_buildid.o -D GOOS_linux -D GOARCH_amd64 -D GOPKGPATH=github_0com_1xeipuuv_1gojsonschema -m64 $WORK/b203/_buildid.s
+ar rcD $WORK/b203/_pkg_.a $WORK/b203/_go_.o $WORK/b203/_buildid.o
+/my/install/dir/tools/buildid -w $WORK/b203/_pkg_.a # internal
+cp $WORK/b203/_pkg_.a /home/ming/.cache/go-build/24/24222141fb83959f38104a3dbb3b89422aab2d3ffc1ebb1c9060691d6a54ed72-d # internal
