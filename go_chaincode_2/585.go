@@ -5,7 +5,7 @@ Copyright IBM Corp. All Rights Reserved.
 SPDX-License-Identifier: Apache-2.0
 */
 
-package enclave_go
+package main
 
 import (
 	"github.com/hyperledger/fabric-chaincode-go/shim"

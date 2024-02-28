@@ -4,7 +4,7 @@ Copyright IBM Corp. All Rights Reserved.
 SPDX-License-Identifier: Apache-2.0
 */
 
-package callee
+package main
 
 import (
 	"github.com/hyperledger/fabric-chaincode-go/shim"

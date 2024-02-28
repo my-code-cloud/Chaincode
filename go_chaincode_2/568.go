@@ -1,4 +1,4 @@
-package batch
+package main
 
 import (
 	"github.com/golang/protobuf/ptypes/timestamp"

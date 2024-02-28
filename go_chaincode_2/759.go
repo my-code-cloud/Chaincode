@@ -7,7 +7,7 @@
 // Deprecated: ShimTest will be  removed in a future release.
 // Future development should make use of the ChaincodeStub Interface
 // for generating mocks
-package historyshimtest
+package main
 
 import (
 	"container/list"

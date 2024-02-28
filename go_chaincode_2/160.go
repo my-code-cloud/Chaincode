@@ -1,4 +1,4 @@
-package mocking
+package main
 
 import (
 	"container/list"

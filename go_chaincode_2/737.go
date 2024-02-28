@@ -1,5 +1,5 @@
 // Package pinger contains structure and functions for checking chain code accessibility
-package pinger
+package main
 
 import (
 	"github.com/hyperledger/fabric-chaincode-go/pkg/cid"

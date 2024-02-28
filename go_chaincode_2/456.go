@@ -4,7 +4,7 @@ Copyright 2020-2022 Hitachi, Ltd., Hitachi America, Ltd. All Rights Reserved.
 SPDX-License-Identifier: Apache-2.0
 */
 
-package core
+package main
 
 import (
 	"encoding/json"

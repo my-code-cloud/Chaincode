@@ -1,7 +1,7 @@
 // Copyright the Hyperledger Fabric contributors. All rights reserved.
 // SPDX-License-Identifier: Apache-2.0
 
-package contractapi
+package main
 
 import (
 	"github.com/hyperledger/fabric-chaincode-go/pkg/cid"

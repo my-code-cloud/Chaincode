@@ -1,4 +1,4 @@
-package controller
+package main
 
 // atoi 메서드 util화 시키기
 import (

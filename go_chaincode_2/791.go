@@ -2,7 +2,7 @@
 SPDX-License-Identifier: BSD-3-Clause-Open-MPI
 */
 
-package transaction
+package main
 
 import (
 	"context"

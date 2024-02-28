@@ -1,4 +1,4 @@
-package ChainCode
+package main
 
 import (
 	"fmt"

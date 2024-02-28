@@ -1,4 +1,4 @@
-package golang
+package main
 
 import (
 	"github.com/davidkhala/fabric-common-chaincode-golang/cid"

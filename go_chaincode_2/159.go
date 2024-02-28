@@ -32,7 +32,7 @@
 // 4) Perform MockInvokeTransaction
 //
 // For more details, please find test example in the README file
-package mock
+package main
 
 import (
 	"fmt"

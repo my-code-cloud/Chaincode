@@ -2,7 +2,7 @@
 SPDX-License-Identifier: BSD-3-Clause-Open-MPI
 */
 
-package invokechaincode
+package main
 
 import (
 	"encoding/json"

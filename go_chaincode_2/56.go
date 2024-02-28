@@ -3,7 +3,7 @@
 
 // Package shimtest provides a mock of the ChaincodeStubInterface for
 // unit testing chaincode.
-package mock
+package main
 
 import (
 	"container/list"

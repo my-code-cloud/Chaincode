@@ -1,4 +1,4 @@
-package privacy_preserving_transparent_supply_chain
+package main
 
 import (
 	"encoding/json"

@@ -1,4 +1,4 @@
-package endorsement
+package main
 
 import (
 	"crypto/sha256"

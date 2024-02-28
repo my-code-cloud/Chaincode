@@ -6,7 +6,7 @@
 # @Description : 业务service的基类
 # @Attention : 
 */
-package cc
+package main
 
 import (
 	"encoding/json"

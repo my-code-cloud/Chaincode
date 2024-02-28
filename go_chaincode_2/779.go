@@ -5,7 +5,7 @@ Copyright 2020 Intel Corporation
 SPDX-License-Identifier: Apache-2.0
 */
 
-package registry_test
+package main
 
 import (
 	"encoding/base64"

@@ -1,4 +1,4 @@
-package gateway
+package main
 
 import (
 	"github.com/hyperledger/fabric-chaincode-go/shim"

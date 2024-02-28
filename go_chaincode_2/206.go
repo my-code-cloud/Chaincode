@@ -1,4 +1,4 @@
-package router_test
+package main
 
 import (
 	"testing"

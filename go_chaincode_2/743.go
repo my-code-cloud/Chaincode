@@ -1,4 +1,4 @@
-package hellopoly
+package main
 
 import (
 	"encoding/hex"

@@ -1,5 +1,5 @@
 // Package testing provides helpers to ease testing chaincode related code
-package testing
+package main
 
 import (
 	"github.com/golang/protobuf/ptypes/timestamp"

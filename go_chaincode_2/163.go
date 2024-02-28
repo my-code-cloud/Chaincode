@@ -6,7 +6,7 @@ Copyright 2020 Intel Corporation
 SPDX-License-Identifier: Apache-2.0
 */
 
-package enclave_go
+package main
 
 import (
 	"crypto/sha256"

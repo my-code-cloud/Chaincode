@@ -1,4 +1,4 @@
-package cid
+package main
 
 import (
 	"crypto/x509"

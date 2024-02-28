@@ -12,7 +12,7 @@
  *  limitations under the License.
  *
  */
-package debug
+package main
 
 import (
 	"encoding/json"
