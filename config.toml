@@ -1,0 +1,21 @@
+ignoreGeneratedHeader = false
+severity = "warning"
+confidence = 0.8
+errorCode = 0
+warningCode = 0
+
+[rule.chaincode-blacklist-import]
+[rule.chaincode-cross-channel]
+[rule.chaincode-global-variable]
+[rule.chaincode-phantom-read]
+[rule.chaincode-pointer]
+[rule.chaincode-privacy-arg]
+[rule.chaincode-privacy-br]
+[rule.chaincode-privacy-ret]
+[rule.chaincode-range-map]
+[rule.chaincode-read-write]
+[rule.chaincode-routine]
+[rule.conversion-overflow]
+[rule.math-overflow]
+[rule.unhandled-error]
+[rule.unchecked-parameter]

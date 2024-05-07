@@ -4,7 +4,8 @@
 
 ## Fabric链码
 
-Hyperledger Fabric平台的智能合约最终会被打包成链码并部署在各个节点上，因此从开发者的角度，Fabric平台的链码和智能合约可以被视为同一事物。Fabric平台的链码可以通过Go、Node.js（包括Javascript和Typescript）、Java语言开发，Fabric为各个语言的开发者提供了相应的接口用于实现链码的各种逻辑功能。
+Hyperledger Fabric平台的智能合约最终会被打包成链码并部署在各个节点上。
+Fabric平台的链码可以通过Go、Node.js、Java语言开发，Fabric为各个语言的开发者提供了相应的接口用于实现链码的各种逻辑功能。
 
 ## 收集方法
 
@@ -12,7 +13,7 @@ Hyperledger Fabric平台的智能合约最终会被打包成链码并部署在�
 
 - Go
   - (high level) github.com/hyperledger/fabric-contract-api-go/contractapi
-  - (low level) github.com/hyperledger/fabric-chaincode-go
+  - (low level) github.com/hyperledger/fabric-chaincode-go/shim
 - Node.js
   - (high level) fabric-contract-api
   - (low level) fabric-shim
