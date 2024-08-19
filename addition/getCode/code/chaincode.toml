@@ -1,0 +1,9 @@
+ignoreGeneratedHeader = false
+severity = "warning"
+confidence = 0.1
+errorCode = 0
+warningCode = 0
+
+[rule.chaincode-privacy-arg]
+[rule.chaincode-privacy-br]
+[rule.chaincode-privacy-ret]
