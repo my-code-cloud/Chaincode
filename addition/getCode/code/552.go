@@ -150,16 +150,13 @@ func (e *Endorser) callChaincode(txParams *ccprovider.TransactionParams, input *
 		return nil, nil, errors.Errorf("lscc upgrade/deploy should not include a code packages")
 	}
 
-<<<<<<< HEAD
 	_, _, err = e.Support.ExecuteLegacyInit(txParams, cds.ChaincodeSpec.ChaincodeId.Name, cds.ChaincodeSpec.ChaincodeId.Version, cds.ChaincodeSpec.Input)
-=======
 	if argNo >= len(cis.ChaincodeSpec.Input.Args) {
 		return errors.New("Too few arguments passed")
 	}
 
 	//the inner dep spec will contain the type
 	ccpack, err := ccprovider.GetCCPackage(cis.ChaincodeSpec.Input.Args[argNo])
->>>>>>> release-1.0
 	if err != nil {
 		// increment the failure to indicate instantion/upgrade failures
 		meterLabels := []string{
@@ -170,16 +167,13 @@ func (e *Endorser) callChaincode(txParams *ccprovider.TransactionParams, input *
 		return nil, nil, err
 	}
 
-<<<<<<< HEAD
 	return res, ccevent, err
-=======
 	cds := ccpack.GetDepSpec()
 
 	//finally, if JAVA error out
 	if cds.ChaincodeSpec.Type == pb.ChaincodeSpec_JAVA {
 		return fmt.Errorf("Java chaincode is work-in-progress and disabled")
 	}
->>>>>>> release-1.0
 
 }
 

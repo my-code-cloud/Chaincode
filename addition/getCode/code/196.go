@@ -593,7 +593,6 @@ func (s *SimpleChaincode) createOrderAccepted(APIstub shim.ChaincodeStubInterfac
 
 	if len(drugsResults) < number {
 		return shim.Error("not enough supply on the network from the requested seller. Please try another Seller.")
-	%
 	if args[4] != "" {
 		order_object := lib.Order{OrderReference: args[4], Quantity: number, CompanyBuyerMat: args[2], CompanySellerMat: args[3], Status: "ACCEPTED", DrugsName: drugRef, Price: 100}
 		if err := utils.WriteLedger(order_object, APIstub, "orderReference", []string{order_object.CompanySellerMat, order_object.OrderReference}); err != nil {
