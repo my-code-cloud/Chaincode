@@ -12,10 +12,12 @@ import (
 	"strconv"
 	"strings"
 	"time"
+
 	"github.com/hyperledger/fabric-chaincode-go/shim"
 	"github.com/hyperledger/fabric-contract-api-go/contractapi"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 )
+
 func (t *SimpleChaincode) Invoke(stub shim.ChaincodeStubInterface) pb.Response {
 	function, args := stub.GetFunctionAndParameters()
 	fmt.Println("invoke is running " + function)
@@ -23,21 +25,21 @@ func (t *SimpleChaincode) Invoke(stub shim.ChaincodeStubInterface) pb.Response {
 		return t.registerCompany(stub, args)
 	} else if function == "getAllCompanies" { //return all companies on the ledger
 		return t.getAllCompanies(stub)
-	} else if function == "getAllDrugs" { //return all drugs from a particular seller 
+	} else if function == "getAllDrugs" { //return all drugs from a particular seller
 		return t.getAllDrugs(stub)
-	} else if function == "addDrug" { //add a drug to ledger 
+	} else if function == "addDrug" { //add a drug to ledger
 		return t.addDrug(stub, args)
 	} else if function == "deleteAllDrugsFromSeller" { //delete all Drugs from a particular Seller
 		return t.deleteAllDrugsFromSeller(stub, args)
 	} else if function == "deleteAllOrdersFromSeller" { //delete all Orders from a particular Seller
 		return t.deleteAllOrdersFromSeller(stub, args)
-	} else if function == "deleteAllShipmentsFromSeller" { //delete all Shipments from a particular seller 
+	} else if function == "deleteAllShipmentsFromSeller" { //delete all Shipments from a particular seller
 		return t.deleteAllShipmentsFromSeller(stub, args)
-	} else if function == "viewDrugHistory" { 
+	} else if function == "viewDrugHistory" {
 		return t.viewDrugHistory(stub, args)
-	} else if function == "createOrder" { //order creation relying on key based query by default 
+	} else if function == "createOrder" { //order creation relying on key based query by default
 		return t.createOrder(stub, args)
-	} else if function == "createOrderRichQuery" { //order creation relying on rich query 
+	} else if function == "createOrderRichQuery" { //order creation relying on rich query
 		return t.createOrderRichQuery(stub, args)
 	} else if function == "checkOrderPrivateP1" { //computes
 		return t.verifyOrderDetails(stub, args)
@@ -53,7 +55,7 @@ func (t *SimpleChaincode) Invoke(stub shim.ChaincodeStubInterface) pb.Response {
 		return t.checkOrderPrivateP4(stub, args)
 	} else if function == "getAllOrders" { //get all orders from a particular seller
 		return t.getAllOrders(stub)
-	} else if function == "getAllShipments" {//get all shipments from a particular seller
+	} else if function == "getAllShipments" { //get all shipments from a particular seller
 		return t.getAllShipments(stub)
 	} else if function == "updateShipment" { //mark a shipment as delivered
 		return t.updateShipment(stub, args)
@@ -175,14 +177,14 @@ func (s *SimpleChaincode) getAllCompanies(APIstub shim.ChaincodeStubInterface) p
  * @returns  A ‘Drug’ asset on the ledger
  */
 func (s *SimpleChaincode) addDrug(stub shim.ChaincodeStubInterface, args []string) pb.Response {
-	drug_object := lib.Drug{ProductID: args[0], SerialNumber: args[4] , Manufacturer: args[3], ManufacturingDate: args[1], ExpiryDate: args[2], InWareHouse: true, Owner: args[3]}
+	drug_object := lib.Drug{ProductID: args[0], SerialNumber: args[4], Manufacturer: args[3], ManufacturingDate: args[1], ExpiryDate: args[2], InWareHouse: true, Owner: args[3]}
 	if err := utils.WriteLedger(drug_object, stub, lib.DrugKey, []string{drug_object.ProductID, drug_object.Manufacturer, drug_object.SerialNumber}); err != nil {
 		return shim.Error(fmt.Sprintf("%s", err))
 	}
 	return shim.Success(nil)
 }
 
-//args[0]: drugRef args[1]: seller name
+// args[0]: drugRef args[1]: seller name
 func (s *SimpleChaincode) deleteAllDrugsFromSeller(stub shim.ChaincodeStubInterface, args []string) pb.Response {
 	resultIterator, err := stub.GetStateByPartialCompositeKey(lib.DrugKey, []string{args[0], args[1]})
 	if err != nil {
@@ -207,7 +209,7 @@ func (s *SimpleChaincode) deleteAllDrugsFromSeller(stub shim.ChaincodeStubInterf
 	return shim.Success(nil)
 }
 
-//args[0]: drugRef args[1]: seller name
+// args[0]: drugRef args[1]: seller name
 func (s *SimpleChaincode) deleteAllOrdersFromSeller(stub shim.ChaincodeStubInterface, args []string) pb.Response {
 	allOrdersIterator, err := stub.GetStateByPartialCompositeKey(lib.OrderKey, []string{args[0]})
 	if err != nil {
@@ -234,7 +236,7 @@ func (s *SimpleChaincode) deleteAllOrdersFromSeller(stub shim.ChaincodeStubInter
 	return shim.Success(nil)
 }
 
-//args[0]: drugRef args[1]: seller name
+// args[0]: drugRef args[1]: seller name
 func (s *SimpleChaincode) deleteAllShipmentsFromSeller(stub shim.ChaincodeStubInterface, args []string) pb.Response {
 	allOrdersIterator, err := stub.GetStateByPartialCompositeKey(lib.ShipmentKey, []string{args[0]})
 	if err != nil {
@@ -261,7 +263,7 @@ func (s *SimpleChaincode) deleteAllShipmentsFromSeller(stub shim.ChaincodeStubIn
 	return shim.Success(nil)
 }
 
-//args[0]:drugRef
+// args[0]:drugRef
 func (s *SimpleChaincode) viewDrugHistory(stub shim.ChaincodeStubInterface, args []string) pb.Response {
 	key, _ := stub.CreateCompositeKey(lib.DrugKey, args)
 	keysIter, err := stub.GetHistoryForKey(key)
@@ -472,7 +474,7 @@ func (s *SimpleChaincode) createOrderRichQuery(APIstub shim.ChaincodeStubInterfa
 	if err != nil {
 		return shim.Error(fmt.Sprintf("%s", err))
 	}
-	
+
 	//rich query
 	argsStringDrug := fmt.Sprintf("{\"selector\":{\"productID\":\"%s\",\"manufacturer\":\"%s\"}}", args[0], companySellerMat)
 
@@ -555,7 +557,6 @@ func (s *SimpleChaincode) createOrder(APIstub shim.ChaincodeStubInterface, args 
 	return shim.Success(nil)
 }
 
-
 /*
 * @param DrugsName - reference of the requested Drug: (ex: DOLIP500 for Doliprane 500mg)
 * @param Quantity - requested Quantity
@@ -593,18 +594,19 @@ func (s *SimpleChaincode) createOrderAccepted(APIstub shim.ChaincodeStubInterfac
 
 	if len(drugsResults) < number {
 		return shim.Error("not enough supply on the network from the requested seller. Please try another Seller.")
-	if args[4] != "" {
-		order_object := lib.Order{OrderReference: args[4], Quantity: number, CompanyBuyerMat: args[2], CompanySellerMat: args[3], Status: "ACCEPTED", DrugsName: drugRef, Price: 100}
-		if err := utils.WriteLedger(order_object, APIstub, "orderReference", []string{order_object.CompanySellerMat, order_object.OrderReference}); err != nil {
-			return shim.Error(fmt.Sprintf("%s", err))
+		if args[4] != "" {
+			order_object := lib.Order{OrderReference: args[4], Quantity: number, CompanyBuyerMat: args[2], CompanySellerMat: args[3], Status: "ACCEPTED", DrugsName: drugRef, Price: 100}
+			if err := utils.WriteLedger(order_object, APIstub, "orderReference", []string{order_object.CompanySellerMat, order_object.OrderReference}); err != nil {
+				return shim.Error(fmt.Sprintf("%s", err))
+			}
+		} else {
+			order_object := lib.Order{OrderReference: RandomString(7), Quantity: number, CompanyBuyerMat: args[2], CompanySellerMat: args[3], Status: "ACCEPTED", DrugsName: drugRef, Price: 100}
+			if err := utils.WriteLedger(order_object, APIstub, "orderReference", []string{order_object.CompanySellerMat, order_object.OrderReference}); err != nil {
+				return shim.Error(fmt.Sprintf("%s", err))
+			}
 		}
-	} else {
-		order_object := lib.Order{OrderReference: RandomString(7), Quantity: number, CompanyBuyerMat: args[2], CompanySellerMat: args[3], Status: "ACCEPTED", DrugsName: drugRef, Price: 100}
-		if err := utils.WriteLedger(order_object, APIstub, "orderReference", []string{order_object.CompanySellerMat, order_object.OrderReference}); err != nil {
-			return shim.Error(fmt.Sprintf("%s", err))
-		}
+		return shim.Success(nil)
 	}
-	return shim.Success(nil)
 }
 
 func (s *SimpleChaincode) verifyOrderDetails(stub shim.ChaincodeStubInterface, args []string) pb.Response {
@@ -696,7 +698,7 @@ func (s *SimpleChaincode) checkOrderPrivateP2(stub shim.ChaincodeStubInterface, 
 	return shim.Success(nil)
 }
 
-//order verification pattern 4
+// order verification pattern 4
 func (s *SimpleChaincode) checkOrderPrivateP4(APIstub shim.ChaincodeStubInterface, args []string) pb.Response {
 
 	// Get new asset from transient map
@@ -848,7 +850,7 @@ func (s *SimpleChaincode) createShipmentRichQuery(APIstub shim.ChaincodeStubInte
 	return shim.Success(nil)
 }
 
-//create a Shipment label based on order reference (only if there is enough supply of the requested drug)
+// create a Shipment label based on order reference (only if there is enough supply of the requested drug)
 func (s *SimpleChaincode) createShipment(APIstub shim.ChaincodeStubInterface, args []string) pb.Response {
 
 	pattern, err := strconv.Atoi(args[2])
@@ -961,7 +963,7 @@ func (s *SimpleChaincode) createShipment(APIstub shim.ChaincodeStubInterface, ar
 	return shim.Success(nil)
 }
 
-//set shipment status on delivered
+// set shipment status on delivered
 func (s *SimpleChaincode) updateShipment(APIstub shim.ChaincodeStubInterface, args []string) pb.Response {
 	key, err := APIstub.CreateCompositeKey(lib.ShipmentKey, []string{args[0]})
 	if err != nil {
@@ -986,7 +988,7 @@ func (s *SimpleChaincode) updateShipment(APIstub shim.ChaincodeStubInterface, ar
 
 }
 
-//used by queries (getAllOrders / getAllShipments)
+// used by queries (getAllOrders / getAllShipments)
 func (s *SimpleChaincode) getAllAssets(APIstub shim.ChaincodeStubInterface, indexName string) pb.Response {
 
 	allOrdersIterator, orgError := APIstub.GetStateByPartialCompositeKey(indexName, []string{})
