@@ -1,3 +1,0 @@
-WORK=/tmp/go-build3812864701
-go: updates to go.mod needed; to update it:
-	go mod tidy
