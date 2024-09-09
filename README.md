@@ -45,6 +45,6 @@ cd evaluation/code directory
 revive -config chaincode.toml -formatter stylish > output
 ```
 
-1. Check all possible vulnerability in each code and reconcile each vulnerability report. You can refer to *github_code_stats.xlsx* for the final results. It records the vulnerabilities found in each code by manual check, as well as all false positives and false negatives found in the vulnerability reports.
+4. Check all possible vulnerability in each code and reconcile each vulnerability report. You can refer to *github_code_stats.xlsx* for the final results. It records the vulnerabilities found in each code by manual check, as well as all false positives and false negatives found in the vulnerability reports.
 
 Here, the reproduction step ends and you can compare the results to TABLE IV in the paper to evaluate reproducibility.
