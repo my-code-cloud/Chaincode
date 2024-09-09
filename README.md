@@ -24,12 +24,26 @@ The directory structure is shown below:
 - **study** dictionary: Includes data for empirical studies on PDC misuse based on GitHub chaincodes in *codeInfo.xlsx* and StackOverflow posts in *stackoverflowQA.xlsx*. The *code* directory and the *script* directory store the source code and the scripts used to process the code, respectively.
 - **evaluation** dictionary: Includes test data used to validate our tool in *code* directory and the results in *github_code_stats.xlsx*. the *script* directory store the scripts used to process the code, too.
 
-## Reproducibility Instructions:
+## Reproducibility Instructions
+
+1. Make sure you have PDChecker installed and tested. Refer to [PDChecker](https://github.com/zm-stack/PDChecker)
 
 ```bash
-# Make sure you have PDChecker installed and tested
-# Run the following command in evaluation/code directory
+revive -h
+```
+
+2. Get into the following directory. This directory includes all the test cases evaluating PDChecker in the paper.
+
+```bash
+cd evaluation/code directory
+```
+
+3. Call PDCherker to test all codes and save the results to the *output* file. If successful, you will get the same results as in the *result* file.
+
+```bash
 revive -config chaincode.toml -formatter stylish > output
 ```
 
-You will see all the test results in the output file.
+1. Check all possible vulnerability in each code and reconcile each vulnerability report. You can refer to *github_code_stats.xlsx* for the final results. It records the vulnerabilities found in each code by manual check, as well as all false positives and false negatives found in the vulnerability reports.
+
+Here, the reproduction step ends and you can compare the results to TABLE IV in the paper to evaluate reproducibility.
