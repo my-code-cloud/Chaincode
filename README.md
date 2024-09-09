@@ -5,19 +5,20 @@
 
 The directory structure is shown below:
 
-  Dataset
-  ├── README.md
-  ├── study
-  │    ├── code
-  │    ├── script
-  │    ├── codeInfo.xlsx
-  │    └── stackoverflowQA.xlsx
-  └── evaluation
-        ├── code
-        ├── script
-        └── github_code_stats.xlsx
-
----
+```
+.
+├── LICENSE
+├── README.md
+├── evaluation
+│   ├── code
+│   ├── github_code_stats.xlsx
+│   └── script
+└── study
+    ├── code
+    ├── codeInfo.xlsx
+    ├── script
+    └── stackoverflowQA.xlsx
+```
 
 ## Instruction
 
